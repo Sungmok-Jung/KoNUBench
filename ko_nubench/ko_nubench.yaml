@@ -1,5 +1,5 @@
 task: ko_nubench_tmp
-dataset_path: /mnt/sm/ko_nubench_tmp
+dataset_path: /root/KoNUBench/dataset
 dataset_name: null
 output_type: multiple_choice
 validation_split: validation
