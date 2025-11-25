@@ -122,9 +122,9 @@ def split_dataset(
         with path.open("w", encoding="utf-8") as f:
             json.dump(records, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-    save_json(train_df, out_dir / "train.json")
-    save_json(val_df, out_dir / "val.json")
-    save_json(test_df, out_dir / "test.json")
+    save_json(train_df, out_dir / "train/train.json")
+    save_json(val_df, out_dir / "validation/val.json")
+    save_json(test_df, out_dir / "test/test.json")
 
     print(f"저장 완료: {out_dir / 'train.json'}, {out_dir / 'val.json'}, {out_dir / 'test.json'}")
 
