@@ -132,7 +132,7 @@ def tokenize_load_dataset(args, tokenizer: AutoTokenizer):
         end_ids = end_tokenized["input_ids"]
 
         seq = ctx_ids + end_ids
-        target = ([tokenizer.pad_token_id] * len(ctx_ids)) + end_ids
+        target = ([-100] * len(ctx_ids)) + end_ids
 
 
         train_dataset.append({

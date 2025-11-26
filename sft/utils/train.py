@@ -213,7 +213,10 @@ def train(
         # torch.distributed.barrier()
 
         print(f"Saving checkpoint to '{checkpoint_path}'")
-        model_engine.save_checkpoint(checkpoint_path)
+        # model_engine.save_checkpoint(checkpoint_path)
+        model_engine.save_16bit_model(checkpoint_path)
+        model_engine.module.config.save_pretrained(checkpoint_path)  # config.json
+        tokenizer.save_pretrained(checkpoint_path)  
         # torch.distributed.barrier()
     
     return
