@@ -107,8 +107,12 @@ def process_docs_symbol(dataset) -> Dataset:
     else:
       choices_str = [std, local, contra, para]
       choices = ["A", "B", "C", "D"]
-    
-    random.seed(int(doc["idx"]))
+
+    idx = doc["idx"]
+    if idx.startswith("G"):
+       idx = idx[1:]
+
+    random.seed(int(idx))
     random.shuffle(choices_str)
     gold = choices_str.index(std)
 

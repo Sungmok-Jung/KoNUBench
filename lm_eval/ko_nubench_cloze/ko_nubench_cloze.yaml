@@ -1,4 +1,4 @@
-task: ko_nubench_tmp
+task: ko_nubench_cloze
 dataset_path: /root/KoNUBench/dataset
 dataset_name: null
 output_type: multiple_choice
