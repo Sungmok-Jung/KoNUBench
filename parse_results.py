@@ -1,8 +1,11 @@
 import os
 import json
 import pandas as pd
+from datetime import datetime
 
 TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag']
+NOW = datetime.now()
+TIMESTAMP = NOW.strftime("%m%d_%H%M")
 
 def parse_results(root_dir):
 
@@ -34,7 +37,7 @@ def parse_results(root_dir):
                 except Exception as e:
                     print(f"failed to read file: {file_path} → {e}")
 
-    with open("results.json", "w", encoding="utf-8") as f:
+    with open(f"results_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
     return results
@@ -50,29 +53,22 @@ def make_csv(results):
 
     df = pd.DataFrame.from_dict(rows, orient="index")
 
-    # 열 정렬(선택): 태스크명, 그 안에서 acc → acc_norm 순
+    # sort the columns by task names(acc, acc_norm)
     df = df.reindex(
         columns=sorted(df.columns, key=lambda x: (x[0], 0 if x[1]=="acc" else 1))
     )
 
     df.index.name = "model"
+    # sort the rows by model names
     df = df.sort_index()
 
-    # 표시용 결측치 공란
     df_out = df.copy().where(pd.notnull(df), None)
 
-    # ----- CSV로 저장 -----
-    df_out.to_csv("results_table.csv", encoding="utf-8-sig", float_format="%.6f")
-
-    # ----- 엑셀로 저장 (시트/고정틀 등 옵션) -----
-    with pd.ExcelWriter("results_table.xlsx", engine="xlsxwriter") as writer:
-        df_out.to_excel(writer, sheet_name="results")
-        ws = writer.sheets["results"]
-        # 헤더가 2줄(MultiIndex)이므로 2행+1열 고정(보기 편함)
-        ws.freeze_panes(2, 1)
+    # ----- save to csv -----
+    df_out.to_csv(f"results_table_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
 
 if __name__ == "__main__":
-    root_dir = "/mnt/sm/KoNUBench/baseline"
+    root_dir = "/shared/erc/lab08/korean_negation/baseline"
     results = parse_results(root_dir=root_dir)
     make_csv(results=results)
 
