@@ -1,0 +1,80 @@
+{
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "ko_nubench_symbol": {
+      "acc": 0.5903426791277259,
+      "acc_norm": 0.5903426791277259
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4883177570093458,
+      "acc_norm": 0.5085669781931464
+    },
+    "arc_easy": {
+      "acc": 0.33291245791245794,
+      "acc_norm": 0.3392255892255892
+    },
+    "arc_challenge": {
+      "acc": 0.2790102389078498,
+      "acc_norm": 0.3003412969283277
+    },
+    "winogrande": {
+      "acc": 0.7158642462509865,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6054570802628958,
+      "acc_norm": 0.787890858394742
+    }
+  },
+  "Qwen__Qwen3-32B": {
+    "ko_nubench_symbol": {
+      "acc": 0.9322429906542056,
+      "acc_norm": 0.9322429906542056
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.589563862928349,
+      "acc_norm": 0.618380062305296
+    },
+    "arc_easy": {
+      "acc": 0.3367003367003367,
+      "acc_norm": 0.3425925925925926
+    },
+    "arc_challenge": {
+      "acc": 0.29436860068259385,
+      "acc_norm": 0.318259385665529
+    },
+    "winogrande": {
+      "acc": 0.7324388318863457,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6394144592710616,
+      "acc_norm": 0.8261302529376618
+    }
+  },
+  "Qwen__Qwen3-0.6B": {
+    "ko_nubench_symbol": {
+      "acc": 0.6035825545171339,
+      "acc_norm": 0.6035825545171339
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.37305295950155765,
+      "acc_norm": 0.3956386292834891
+    },
+    "arc_easy": {
+      "acc": 0.31186868686868685,
+      "acc_norm": 0.3143939393939394
+    },
+    "arc_challenge": {
+      "acc": 0.26023890784982934,
+      "acc_norm": 0.2815699658703072
+    },
+    "winogrande": {
+      "acc": 0.5572217837411207,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.37572196773551086,
+      "acc_norm": 0.47231627165903206
+    }
+  }
+}
