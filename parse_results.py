@@ -195,14 +195,25 @@ if __name__ == '__main__':
     gsds_env = 'gsds'
     amd_env = 'amd'
 
-    #results_0shot = parse_0shot_results(root_dir=gsds_root_dir, env=env)
-    #make_0shot_csv(results=results_0shot, env=gsds_env)
+    # ===================== gsds ==============================
+    # results_0shot = parse_0shot_results(root_dir=gsds_root_dir, env=gsds_env)
+    # make_0shot_csv(results=results_0shot, env=gsds_env)
 
-    #results_1shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=1)
-    #results_2shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=2)
-    #results_5shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=5)
-    #results_10shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=10)
+    # results_1shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=1)
+    # results_2shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=2)
+    # results_5shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=5)
+    # results_10shot = parse_fewshot_results(root_dir=gsds_root_dir, fewshot=10)
 
+    # results_fewshot = {}
+    # for d in (results_1shot, results_2shot, results_5shot, results_10shot):
+    #     results_fewshot = deep_merge_fewshot(results_fewshot, d)
+
+    # with open(f"results_fewshot_{gsds_env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+    #     json.dump(results_fewshot, f, ensure_ascii=False, indent=2)
+
+    # make_fewshot_csv(results=results_fewshot, env=gsds_env)
+
+    # ===================== amd ==============================
     results_0shot = parse_0shot_results(root_dir=amd_root_dir, env=amd_env)
     make_0shot_csv(results=results_0shot, env=amd_env)
 
