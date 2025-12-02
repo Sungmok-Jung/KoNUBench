@@ -6,7 +6,7 @@ from datetime import datetime
 NOW = datetime.now()
 TIMESTAMP = NOW.strftime("%m%d_%H%M")
 
-ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag']
+ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag']
 def parse_0shot_results(root_dir: str, env: str):
     results = {}
     base = os.path.join(root_dir, f"0shot")
@@ -37,7 +37,7 @@ def parse_0shot_results(root_dir: str, env: str):
                 except Exception as e:
                     print(f"failed to read file: {file_path} → {e}")
 
-    with open(f"results_0shot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+    with open(f"results/0shot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
     return results
@@ -138,7 +138,7 @@ def make_0shot_csv(results: dict, env: str):
     df_out = df.copy().where(pd.notnull(df), None)
 
     # ----- save to csv -----
-    df_out.to_csv(f"results_0shot_{env}_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
+    df_out.to_csv(f"results/0shot_{env}_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
 
 def make_fewshot_csv(results: dict, env:str):
     rows = {}
@@ -185,8 +185,8 @@ def make_fewshot_csv(results: dict, env:str):
     df_out = df.where(pd.notnull(df), None)
 
     # ----- save to csv -----
-    df_out.to_csv(f"results_fewshot_{env}_{TIMESTAMP}.csv", encoding='utf-8-sig', float_format='%.6f')
-    print(f"results_fewshot_{env}_{TIMESTAMP}.csv is created!")
+    df_out.to_csv(f"results/fewshot_{env}_{TIMESTAMP}.csv", encoding='utf-8-sig', float_format='%.6f')
+    print(f"fewshot_{env}_{TIMESTAMP}.csv is created!")
 
 if __name__ == '__main__':
     gsds_root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
@@ -208,7 +208,7 @@ if __name__ == '__main__':
     # for d in (results_1shot, results_2shot, results_5shot, results_10shot):
     #     results_fewshot = deep_merge_fewshot(results_fewshot, d)
 
-    # with open(f"results_fewshot_{gsds_env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+    # with open(f"results/fewshot_{gsds_env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
     #     json.dump(results_fewshot, f, ensure_ascii=False, indent=2)
 
     # make_fewshot_csv(results=results_fewshot, env=gsds_env)
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     for d in (results_1shot, results_2shot, results_5shot, results_10shot):
         results_fewshot = deep_merge_fewshot(results_fewshot, d)
 
-    with open(f"results_fewshot_{amd_env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+    with open(f"results/fewshot_{amd_env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
         json.dump(results_fewshot, f, ensure_ascii=False, indent=2)
     
     make_fewshot_csv(results=results_fewshot, env=amd_env)
