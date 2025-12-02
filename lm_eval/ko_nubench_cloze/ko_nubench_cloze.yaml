@@ -1,5 +1,5 @@
 task: ko_nubench_cloze
-dataset_path: /root/KoNUBench/dataset
+dataset_path: /root/KoNUBench/dataset/ko_nubench
 dataset_name: null
 output_type: multiple_choice
 validation_split: validation
