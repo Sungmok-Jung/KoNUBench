@@ -14,8 +14,7 @@ git clone https://github.com/Sungmok-Jung/KoNUBench.git
 ### Add Tasks to lm-eval-harness
 To use KoNUBench tasks inside lm-eval-harness, copy the task directories into your lm-eval-harness installation:
 ~~~bash
-cp -r KoNUBench/dataset/{kmmlu_neg,kmmlu_pos,kobest_boolq_neg,ko_nubench_cloze,ko_nubench_symbol} \
-      /root/sky_workdir/lm-evaluation-harness/lm_eval/tasks/
+bash setup.sh
 ~~~
 
 ### Evaluation
