@@ -13,7 +13,6 @@ import deepspeed
 from transformers import AutoTokenizer, AutoConfig, AutoModelForCausalLM
 import datasets
 import json
-import wandb
 
 def is_main_process() -> bool:
     return (not dist.is_available()) or (not dist.is_initialized()) or dist.get_rank() == 0
@@ -143,24 +142,6 @@ def tokenize_load_dataset(args, tokenizer: AutoTokenizer):
         })
 
     return train_dataset
-
-
-def wandb_init(args):
-    wandb_name = f"{args.model}/lr{args.learning_rate}/seed{args.seed}"
-    checkpoint_path = f"{args.checkpoint_path}/{wandb_name}"
-    if not args.wandb_off and args.global_rank == 0:
-        wandb.login()
-        if not os.path.exists(f"{checkpoint_path}/wandb") :
-            os.makedirs(f"{checkpoint_path}/wandb")
-        run = wandb.init(
-            project=args.wandb_project_name,
-            entity=args.wandb_entity,
-            name=wandb_name,
-            config=args,
-            save_code=True,
-            dir=checkpoint_path
-        )
-        
 
 def deepspeed_init(args):
     deepspeed.init_distributed(verbose=False)

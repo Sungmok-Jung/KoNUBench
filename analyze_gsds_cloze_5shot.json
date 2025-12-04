@@ -1,0 +1,162 @@
+{
+  "Qwen__Qwen3-0.6B": {
+    "1234": {
+      "standard_negation": 663,
+      "local_negation": 584,
+      "contradiction": 26,
+      "paraphrase": 11
+    },
+    "308": {
+      "standard_negation": 655,
+      "local_negation": 589,
+      "contradiction": 28,
+      "paraphrase": 12
+    },
+    "1028": {
+      "standard_negation": 654,
+      "local_negation": 592,
+      "contradiction": 28,
+      "paraphrase": 10
+    }
+  },
+  "meta-llama__Llama-3.2-1B-Instruct": {
+    "1234": {
+      "standard_negation": 660,
+      "local_negation": 577,
+      "contradiction": 35,
+      "paraphrase": 12
+    },
+    "308": {
+      "standard_negation": 681,
+      "local_negation": 554,
+      "contradiction": 36,
+      "paraphrase": 13
+    },
+    "1028": {
+      "standard_negation": 659,
+      "local_negation": 576,
+      "contradiction": 33,
+      "paraphrase": 16
+    }
+  },
+  "Qwen__Qwen3-32B": {
+    "1234": {
+      "standard_negation": 2246,
+      "local_negation": 306,
+      "contradiction": 12,
+      "paraphrase": 4
+    },
+    "308": {
+      "standard_negation": 1139,
+      "local_negation": 135,
+      "contradiction": 8,
+      "paraphrase": 2
+    },
+    "1028": {
+      "standard_negation": 1130,
+      "local_negation": 143,
+      "contradiction": 8,
+      "paraphrase": 3
+    }
+  },
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "1234": {
+      "standard_negation": 1059,
+      "local_negation": 202,
+      "contradiction": 18,
+      "paraphrase": 5
+    },
+    "308": {
+      "standard_negation": 1067,
+      "local_negation": 199,
+      "contradiction": 14,
+      "paraphrase": 4
+    },
+    "1028": {
+      "standard_negation": 1052,
+      "local_negation": 214,
+      "contradiction": 11,
+      "paraphrase": 7
+    }
+  },
+  "kakaocorp__kanana-1.5-2.1b-base": {
+    "1234": {
+      "standard_negation": 999,
+      "local_negation": 265,
+      "contradiction": 14,
+      "paraphrase": 6
+    },
+    "308": {
+      "standard_negation": 1001,
+      "local_negation": 259,
+      "contradiction": 17,
+      "paraphrase": 7
+    },
+    "1028": {
+      "standard_negation": 984,
+      "local_negation": 279,
+      "contradiction": 14,
+      "paraphrase": 7
+    }
+  },
+  "LGAI-EXAONE__EXAONE-4.0-1.2B": {
+    "1234": {
+      "standard_negation": 670,
+      "local_negation": 550,
+      "contradiction": 46,
+      "paraphrase": 18
+    },
+    "308": {
+      "standard_negation": 689,
+      "local_negation": 524,
+      "contradiction": 48,
+      "paraphrase": 23
+    },
+    "1028": {
+      "standard_negation": 677,
+      "local_negation": 540,
+      "contradiction": 45,
+      "paraphrase": 22
+    }
+  },
+  "Qwen__Qwen3-0.6B-Base": {
+    "1234": {
+      "standard_negation": 885,
+      "local_negation": 370,
+      "contradiction": 21,
+      "paraphrase": 8
+    },
+    "308": {
+      "standard_negation": 893,
+      "local_negation": 360,
+      "contradiction": 22,
+      "paraphrase": 9
+    },
+    "1028": {
+      "standard_negation": 906,
+      "local_negation": 350,
+      "contradiction": 22,
+      "paraphrase": 6
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-2.4B": {
+    "1234": {
+      "standard_negation": 801,
+      "local_negation": 431,
+      "contradiction": 38,
+      "paraphrase": 14
+    },
+    "308": {
+      "standard_negation": 784,
+      "local_negation": 445,
+      "contradiction": 37,
+      "paraphrase": 18
+    },
+    "1028": {
+      "standard_negation": 806,
+      "local_negation": 431,
+      "contradiction": 35,
+      "paraphrase": 12
+    }
+  }
+}

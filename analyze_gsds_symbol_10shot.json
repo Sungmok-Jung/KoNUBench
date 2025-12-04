@@ -1,0 +1,62 @@
+{
+  "Qwen__Qwen3-32B": {
+    "1234": {
+      "standard_negation": 1241,
+      "local_negation": 35,
+      "contradiction": 6,
+      "paraphrase": 2
+    },
+    "308": {
+      "standard_negation": 1234,
+      "local_negation": 43,
+      "contradiction": 5,
+      "paraphrase": 2
+    },
+    "1028": {
+      "standard_negation": 1241,
+      "local_negation": 35,
+      "contradiction": 7,
+      "paraphrase": 1
+    }
+  },
+  "Qwen__Qwen3-0.6B": {
+    "1234": {
+      "standard_negation": 272,
+      "local_negation": 284,
+      "contradiction": 168,
+      "paraphrase": 560
+    },
+    "308": {
+      "standard_negation": 263,
+      "local_negation": 279,
+      "contradiction": 167,
+      "paraphrase": 575
+    },
+    "1028": {
+      "standard_negation": 267,
+      "local_negation": 286,
+      "contradiction": 169,
+      "paraphrase": 562
+    }
+  },
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "1234": {
+      "standard_negation": 623,
+      "local_negation": 212,
+      "contradiction": 109,
+      "paraphrase": 340
+    },
+    "308": {
+      "standard_negation": 648,
+      "local_negation": 205,
+      "contradiction": 106,
+      "paraphrase": 325
+    },
+    "1028": {
+      "standard_negation": 627,
+      "local_negation": 214,
+      "contradiction": 111,
+      "paraphrase": 332
+    }
+  }
+}

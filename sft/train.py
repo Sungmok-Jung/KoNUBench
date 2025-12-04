@@ -4,7 +4,7 @@ import torch
 from torch.nn.utils.rnn import pad_sequence
 from tqdm import tqdm
 import wandb
-
+from utils import sanitize_model_name
 
 def _pad_stack(seqs, pad_token_id: int):
     # seqs: List[LongTensor [T]]
@@ -178,9 +178,7 @@ def train(
     tokenizer,
     model_engine, 
     dataset
-):
-    checkpoint_path = f"{args.checkpoint_path}/{args.model}/seed{args.seed}-lr{args.learning_rate}"
-    
+):  
     # TODO: print sample data : text, input_ids, target
 
     # TODO: modify this
@@ -211,6 +209,8 @@ def train(
         )
 
         # torch.distributed.barrier()
+
+        checkpoint_path = f"{args.checkpoint_path}/{sanitize_model_name(args.model)}-seed{args.seed}-lr{args.learning_rate}/epoch{epoch}"
 
         print(f"Saving checkpoint to '{checkpoint_path}'")
         # model_engine.save_checkpoint(checkpoint_path)

@@ -1,0 +1,20 @@
+{
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "standard_negation": 627,
+    "local_negation": 634,
+    "contradiction": 17,
+    "paraphrase": 6
+  },
+  "Qwen__Qwen3-32B": {
+    "standard_negation": 757,
+    "local_negation": 500,
+    "contradiction": 20,
+    "paraphrase": 7
+  },
+  "Qwen__Qwen3-0.6B": {
+    "standard_negation": 479,
+    "local_negation": 766,
+    "contradiction": 30,
+    "paraphrase": 9
+  }
+}

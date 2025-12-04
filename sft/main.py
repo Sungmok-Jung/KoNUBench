@@ -6,21 +6,18 @@ import math
 import torch
 import deepspeed
 
-from utils.load import (
+
+from load import (
     load_model_tokenizer,
     tokenize_load_dataset,
     sft_load_dataset,
-    wandb_init,
-    
     deepspeed_init,
     deepspeed_destroy,
     load_deepspeed_config,
-    load_checkpoint,
-    
+    load_checkpoint
 )
-from utils.train import (
-    train
-)
+from train import train
+from utils import wandb_init
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -30,7 +27,7 @@ def parse_args():
     parser.add_argument("--model_seq_len", default=2048, type=int)
     
     # dataset
-    parser.add_argument("--dataset_path", default="/mnt/sm/ko_nubench_tmp/train/KoNUBench_tmp_train.json")
+    parser.add_argument("--dataset_path", default="/root/KoNUBench/dataset/ko_nubench/train/train.json")
     
     # training settings
     parser.add_argument("--global_batch", default=512, type=int)
@@ -51,7 +48,7 @@ def parse_args():
     parser.add_argument("--wandb_off", action="store_true")
     parser.add_argument("--wandb_entity", default="jongmin-dev-seoul-national-university")
     parser.add_argument("--wandb_project_name", default="chatbot")
-    parser.add_argument("--checkpoint_path", default="/shared/erc/lab08/jongmin/chatbot/checkpoints")
+    parser.add_argument("--checkpoint_path", default="/mnt/sm/KoNUBench/sft/models")
     parser.add_argument("--checkpoint_interval", default=200, type=int)
     parser.add_argument("--prev_ckpt")
     
@@ -89,7 +86,7 @@ def main():
     )
     model_engine = model_engine.to("cuda") # potential problem
     
-    # wandb init
+    # wandb initialize
     wandb_init(args)
         
     # train
