@@ -1,7 +1,7 @@
 import json
 import os
 import sys
-
+import pandas as pd
 # data structure
 # {
 #     "doc_id": 0, 
@@ -37,7 +37,9 @@ import sys
 
 SEED = [1234, 308, 1028]
 SHOT = [0, 1, 2, 5, 10]
+FEWSHOT_LABELS = [f"{x}shot" for x in SHOT] 
 METHOD = ["cloze", "symbol"]
+CATEGORIES = ['standard_negation', 'local_negation', 'contradiction', 'paraphrase']
 
 def remove_prefix_suffix(filename: str):
     name = filename.removeprefix("results_").removesuffix(".json")
@@ -181,24 +183,97 @@ def merge_fewshot(agg: dict, shot: int, src: dict) -> dict:
             s[seed] = counts
     return agg
 
-# if __name__ == "__main__":
-#     env = sys.argv[1]
-#     if sys.argv[1] == "gsds":
-#         root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
-#     elif sys.argv[1] == "amd":
-#         root_dir = '/mnt/sm/KoNUBench/baseline'
-#     else:
-#         raise ValueError("environment must be 'gsds' or 'amd'")
+def save_zeroshot_csv(method_name: str, zero_dict: dict, env: str):
+    """
+    zero_dict: zero_shot_results[method] 구조
+        {
+          "modelA": {"standard_negation": int, "local_negation": int, "contradiction": int, "paraphrase": int},
+          "modelB": {...},
+          ...
+        }
+    CSV: 행=model_name, 열=Z_CATEGORIES
+    """
+    if not zero_dict:
+        print(f"[WARN] No zeroshot data for method={method_name}")
+        return
 
+    rows = []
+    idx = []
 
-    
-#     for method in METHOD:
+    for model, counts in zero_dict.items():
+        row = [int(counts.get(cat, 0)) for cat in CATEGORIES]
+        rows.append(row)
+        idx.append(model)
 
-#         for shot in SHOT:
-            
-#             result = analyze(root_dir=root_dir, method=method, fewshot=shot)
-#             with open(f'analyze_{env}_{method}_{shot}shot.json', "w", encoding="utf-8") as f:
-#                 json.dump(result, f, ensure_ascii=False, indent=2)
+    df = pd.DataFrame(rows, index=idx, columns=CATEGORIES).sort_index()
+
+    out_csv = f"analyze/analyze_{env}_{method_name}_0shot.csv"
+    df.to_csv(out_csv, encoding='utf-8-sig')
+    print(f"Saved CSV: {out_csv}, shape={df.shape}")
+
+def save_fewshot_csv(method_name: str, merged_dict: dict, env: str):
+    """
+    merged_dict: merged_fewshots[method] 구조
+        {
+            "modelA": {
+                "1shot": {seed: {4개 category}}, 
+                "2shot": ...
+            },
+            "modelB": {...}
+        }
+    """
+    # ---- 컬럼 MultiIndex 생성 (seed → category) ----
+    col_tuples = []
+    for seed in SEED:
+        for cat in CATEGORIES:
+            col_tuples.append((seed, cat))
+    columns = pd.MultiIndex.from_tuples(col_tuples, names=['seed', 'type'])
+
+    row_index = []
+    row_data = []
+
+    # ---- 행 생성 (model → fewshot) ----
+    for model, shots in merged_dict.items():
+        for shot in SHOT:
+            shot_label = f"{shot}shot"
+            seed_dict = shots.get(shot_label, {}) or {}
+
+            row_vals = []
+            for seed in SEED:
+                counts = seed_dict.get(seed, {}) or {}
+                for cat in CATEGORIES:
+                    row_vals.append(int(counts.get(cat, 0)))
+
+            row_index.append((model, shot_label))
+            row_data.append(row_vals)
+
+    # ---- 데이터프레임 생성 ----
+    if not row_data:
+        print(f"[WARN] No data to save for method={method_name}")
+        return
+
+    df = pd.DataFrame(
+        row_data,
+        index=pd.MultiIndex.from_tuples(row_index, names=['model', 'fewshot']),
+        columns=columns
+    )
+
+    # ---- ⭐ 중요: fewshot 레벨을 숫자순으로 강제 정렬 ----
+    df = df.reindex(
+        pd.MultiIndex.from_product(
+            [sorted(df.index.levels[0]), FEWSHOT_LABELS],   # model은 알파벳 순, fewshot은 숫자 순
+            names=['model','fewshot']
+        )
+    )
+
+    # 행 중 실제로 없는 값은 drop할 수도 있음 (옵션)
+    df = df.dropna(how='all')
+
+    # ---- CSV 저장 ----
+    out_csv = f"analyze/analyze_{env}_{method_name}_fewshot.csv"
+    df.to_csv(out_csv, encoding='utf-8-sig')
+    print(f"Saved CSV: {out_csv}, shape={df.shape}")
+
 
 if __name__ == "__main__":
     env = sys.argv[1]
@@ -230,14 +305,14 @@ if __name__ == "__main__":
                 merged_fewshots[method] = merge_fewshot(merged_fewshots[method], shot, res)
 
     # 필요하면 파일로도 저장
-    out_zero = os.path.join(root_dir, "merged_zero_shot.json")
-    out_few  = os.path.join(root_dir, "merged_few_shot.json")
+    
+    for method in METHOD:
+        zero_out_name = f"analyze/analyze_{env}_{method}_0shot.json"
+        few_out_name = f"analyze/analyze_{env}_{method}_fewshot.json"
 
-    with open(out_zero, "w", encoding="utf-8") as f:
-        json.dump(zero_shot_results, f, ensure_ascii=False, indent=2)
-    with open(out_few, "w", encoding="utf-8") as f:
-        json.dump(merged_fewshots, f, ensure_ascii=False, indent=2)
-
-    # 간단 출력(옵션)
-    print("[0-shot] methods:", list(zero_shot_results.keys()))
-    print("[few-shot] methods:", list(merged_fewshots.keys()))
+        with open(zero_out_name, "w", encoding="utf-8") as f:
+            json.dump(zero_shot_results[method], f, ensure_ascii=False, indent=2)
+            save_zeroshot_csv(method, zero_shot_results[method], env)
+        with open(few_out_name, "w", encoding="utf-8") as f:
+            json.dump(merged_fewshots[method], f, ensure_ascii=False, indent=2)
+            save_fewshot_csv(method, merged_fewshots[method], env)
