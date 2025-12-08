@@ -212,7 +212,7 @@ def train(
 
         checkpoint_path = f"{args.checkpoint_path}/{sanitize_model_name(args.model)}-seed{args.seed}-lr{args.learning_rate}/epoch{epoch}"
 
-        if args.deepspeed_stage == "3":
+        if args.deepspeed_stage == 3:
             if torch.distributed.get_rank() == 0:
                 print("I am here!")
                 state_dict = model_engine._zero3_consolidated_16bit_state_dict()
@@ -227,12 +227,12 @@ def train(
 
         else:
         
-    
-            print(f"Saving checkpoint to '{checkpoint_path}'")
-            # model_engine.save_checkpoint(checkpoint_path)
-            model_engine.save_16bit_model(checkpoint_path)
-            model_engine.module.config.save_pretrained(checkpoint_path, safe_serialization=True)  # config.json
-            tokenizer.save_pretrained(checkpoint_path)  
+            if torch.distributed.get_rank() == 0:
+                print(f"Saving checkpoint to '{checkpoint_path}'")
+                # model_engine.save_checkpoint(checkpoint_path)
+                model_engine.save_16bit_model(checkpoint_path)
+                model_engine.module.config.save_pretrained(checkpoint_path, safe_serialization=True)  # config.json
+                tokenizer.save_pretrained(checkpoint_path)  
         
         torch.distributed.barrier()
     
