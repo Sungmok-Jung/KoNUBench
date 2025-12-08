@@ -1,0 +1,6 @@
+﻿,arc_challenge,arc_challenge,arc_easy,arc_easy,hellaswag,hellaswag,kmmlu_neg,kmmlu_neg,kmmlu_pos,kmmlu_pos,ko_nubench_cloze,ko_nubench_cloze,ko_nubench_symbol,ko_nubench_symbol,kobest_boolq,kobest_boolq,kobest_boolq_neg,kobest_boolq_neg,winogrande,winogrande
+,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm,acc,acc_norm
+model,,,,,,,,,,,,,,,,,,,,
+Qwen__Qwen3-0.6B,0.261092,0.281570,0.311869,0.313552,0.375822,0.472316,0.500419,0.500419,0.521526,0.521526,0.369159,0.390966,0.646417,0.646417,0.503561,,0.480769,0.519231,0.557222,
+Qwen__Qwen3-32B,0.294369,0.318259,0.336700,0.342593,0.639414,0.826130,0.795219,0.795219,0.776628,0.776628,0.542056,0.575545,0.942368,0.942368,0.587607,,0.476496,0.519231,0.732439,
+kakaocorp__kanana-1.5-8b-instruct-2505,0.279010,0.299488,0.332071,0.340909,0.605955,0.787493,0.664523,0.664523,0.698630,0.698630,0.535047,0.559190,0.567757,0.567757,0.802707,,0.569088,0.519231,0.718232,
