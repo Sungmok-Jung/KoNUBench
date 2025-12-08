@@ -165,7 +165,9 @@ def train_one_epoch(
             if global_step % args.checkpoint_interval == 0:
                 # print(f"[INFO] Saving checkpoint at step {global_step} | rank {args.global_rank}...")
                 # torch.distributed.barrier()
-                model_engine.save_checkpoint(checkpoint_path)
+                
+                # model_engine.save_checkpoint(checkpoint_path)
+                
                 # torch.distributed.barrier()
                 print(f"[INFO] Checkpoint saved at step {global_step} | rank {args.global_rank}")
                 print(f"global_step % args.checkpoint_interval : {global_step % args.checkpoint_interval}")
