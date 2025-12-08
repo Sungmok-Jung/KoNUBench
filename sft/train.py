@@ -8,7 +8,7 @@ from utils import sanitize_model_name
 
 def _pad_stack(seqs, pad_token_id: int):
     # seqs: List[LongTensor [T]]
-    print(f'pad_token_id is {pad_token_id}')
+    # print(f'pad_token_id is {pad_token_id}')
     return pad_sequence(seqs, batch_first=True, padding_value=pad_token_id)
 
 def _make_attn_mask(input_ids, pad_token_id: int):
@@ -208,15 +208,15 @@ def train(
             global_step=global_step,
         )
 
-        # torch.distributed.barrier()
+        torch.distributed.barrier()
 
         checkpoint_path = f"{args.checkpoint_path}/{sanitize_model_name(args.model)}-seed{args.seed}-lr{args.learning_rate}/epoch{epoch}"
 
         print(f"Saving checkpoint to '{checkpoint_path}'")
         # model_engine.save_checkpoint(checkpoint_path)
         model_engine.save_16bit_model(checkpoint_path)
-        model_engine.module.config.save_pretrained(checkpoint_path)  # config.json
+        model_engine.module.config.save_pretrained(checkpoint_path, safe_serialization=True)  # config.json
         tokenizer.save_pretrained(checkpoint_path)  
-        # torch.distributed.barrier()
+        torch.distributed.barrier()
     
     return
