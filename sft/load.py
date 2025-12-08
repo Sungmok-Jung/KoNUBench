@@ -13,6 +13,7 @@ import deepspeed
 from transformers import AutoTokenizer, AutoConfig, AutoModelForCausalLM
 import datasets
 import json
+from peft import LoraConfig, get_peft_model, TaskType
 
 def is_main_process() -> bool:
     return (not dist.is_available()) or (not dist.is_initialized()) or dist.get_rank() == 0
@@ -62,6 +63,19 @@ def load_model_tokenizer(args, summary=False):
 
     return model, tokenizer
 
+def build_peft_model(base_model):
+    lora_cfg = LoraConfig(
+        task_type=TaskType.CAUSAL_LM,
+        r=8,
+        lora_alpha=32,
+        lora_dropout=0.05,
+        bias="none",
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+        inference_mode=False
+    )
+    peft_model = get_peft_model(base_model, lora_cfg)  # base는 자동으로 freeze, LoRA 가중치만 학습
+    peft_model.print_trainable_parameters()            # 디버그용
+    return peft_model
 
 def sft_load_dataset(args):
     # TODO : args.dataset_names 관련 처리

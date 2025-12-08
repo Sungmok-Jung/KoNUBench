@@ -210,30 +210,31 @@ def train(
 
         torch.distributed.barrier()
 
-        checkpoint_path = f"{args.checkpoint_path}/{sanitize_model_name(args.model)}-seed{args.seed}-lr{args.learning_rate}/epoch{epoch}"
+        save_dir = f"{args.checkpoint_path}/{sanitize_model_name(args.model)}-seed{args.seed}-lr{args.learning_rate}/epoch{epoch}"
 
         if args.deepspeed_stage == 3:
             if torch.distributed.get_rank() == 0:
-                state_dict = model_engine._zero3_consolidated_16bit_state_dict()
-                model_engine.module.save_pretrained(
-                    checkpoint_path,
-                    state_dict=state_dict,
-                    safe_serialization=True  # => model.safetensors
-                )
-                model_engine.module.config.save_pretrained(checkpoint_path)
-                tokenizer.save_pretrained(checkpoint_path)
-                print("[RANK0] saved files:", os.listdir(checkpoint_path))                
+                # state_dict = model_engine._zero3_consolidated_16bit_state_dict()
+                # model_engine.module.save_pretrained(
+                #     save_dir,
+                #     state_dict=state_dict,
+                #     safe_serialization=True  # => model.safetensors
+                # )
+                model_engine.module.save_pretrained(save_dir, safe_serialization=True)
+                model_engine.module.config.save_pretrained(save_dir)
+                tokenizer.save_pretrained(save_dir)
+                print("[RANK0] saved files:", os.listdir(save_dir))                
 
         else:
         
             if torch.distributed.get_rank() == 0:
-                print(f"Saving checkpoint to '{checkpoint_path}'")
+                print(f"Saving checkpoint to '{save_dir}'")
                 # model_engine.save_checkpoint(checkpoint_path)
                 
-                model_engine.module.save_pretrained(checkpoint_path, safe_serialization=True)
+                model_engine.module.save_pretrained(save_dir, safe_serialization=True)
                 # model_engine.save_16bit_model(checkpoint_path)
-                model_engine.module.config.save_pretrained(checkpoint_path)  # config.json
-                tokenizer.save_pretrained(checkpoint_path)  
+                model_engine.module.config.save_pretrained(save_dir)  # config.json
+                tokenizer.save_pretrained(save_dir)  
         
         torch.distributed.barrier()
     

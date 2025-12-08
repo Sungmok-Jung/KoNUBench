@@ -14,7 +14,8 @@ from load import (
     deepspeed_init,
     deepspeed_destroy,
     load_deepspeed_config,
-    load_checkpoint
+    load_checkpoint,
+    build_peft_model
 )
 from train import train
 from utils import wandb_init
@@ -52,6 +53,12 @@ def parse_args():
     parser.add_argument("--checkpoint_interval", default=200, type=int)
     parser.add_argument("--prev_ckpt")
     
+    # lora
+    parser.add_argument("--use_lora", action="store_true")
+    parser.add_argument("--lora_rank", action="store", default=8, type=int)
+    parser.add_argument("--lora_alpha", action="store_true", default=32, type=int)
+    parser.add_argument("--lora_dropout", action="store_true", default=0.05, type=float)
+
     args = parser.parse_args()
 
     args_dict = vars(args)
@@ -67,12 +74,13 @@ def main():
         
     args = parse_args()
 
-    
-
     # load tokenizer & model
     model, tokenizer = load_model_tokenizer(args=args, summary=True)
     # model.to("cuda") # potential problem
     
+    if args.use_lora:
+        model = build_peft_model(base_model=model)
+
     train_dataset = tokenize_load_dataset(args, tokenizer)
     args.num_dataset_rows = len(train_dataset)
 
