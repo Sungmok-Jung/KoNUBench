@@ -57,7 +57,7 @@ def parse_args():
     parser.add_argument("--use_lora", action="store_true")
     parser.add_argument("--lora_rank", action="store", default=8, type=int)
     parser.add_argument("--lora_alpha", action="store_true", default=32, type=int)
-    parser.add_argument("--lora_dropout", action="store_true", default=0.05, type=float)
+    parser.add_argument("--lora_dropout", action="store", default=0.05, type=float)
 
     args = parser.parse_args()
 
