@@ -22,7 +22,7 @@ def load_model_tokenizer(args, summary=False):
     model_loading_start = t.time()
     
     # model
-    model = AutoModelForCausalLM.from_pretrained(args.model)
+    model = AutoModelForCausalLM.from_pretrained(args.model, trust_remote_code=True)
 
     if args.activation_recomputation:
         model.gradient_checkpointing_enable()
@@ -36,7 +36,7 @@ def load_model_tokenizer(args, summary=False):
 
     # tokenizer
     tok_loading_start = t.time()
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
+    tokenizer = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
     if tokenizer.pad_token:
         pass
     elif tokenizer.unk_token:
