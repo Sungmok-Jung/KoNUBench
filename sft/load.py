@@ -188,7 +188,7 @@ def load_deepspeed_config(args):
     ds_config = {
         "zero_optimization":{
             "stage":args.deepspeed_stage,
-            "gather_16bit_weights_on_model_save": True if args.deepspeed_stage=="3" else False
+            "gather_16bit_weights_on_model_save": True if args.deepspeed_stage==3 else False
         },
         "train_batch_size": args.global_batch,
         "train_micro_batch_size_per_gpu": args.micro_batch,
