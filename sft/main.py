@@ -71,7 +71,7 @@ def main():
 
     # load tokenizer & model
     model, tokenizer = load_model_tokenizer(args=args, summary=True)
-    model.to("cuda") # potential problem
+    # model.to("cuda") # potential problem
     
     train_dataset = tokenize_load_dataset(args, tokenizer)
     args.num_dataset_rows = len(train_dataset)
