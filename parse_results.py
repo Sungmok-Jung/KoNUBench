@@ -206,16 +206,17 @@ if __name__ == '__main__':
     results_0shot = parse_0shot_results(root_dir=root_dir, env=env, setting=setting)
     make_0shot_csv(results=results_0shot, env=env, setting=setting)
 
-    results_1shot = parse_fewshot_results(root_dir=root_dir, fewshot=1)
-    results_2shot = parse_fewshot_results(root_dir=root_dir, fewshot=2)
-    results_5shot = parse_fewshot_results(root_dir=root_dir, fewshot=5)
-    results_10shot = parse_fewshot_results(root_dir=root_dir, fewshot=10)
+    if setting == 'baseline':
+        results_1shot = parse_fewshot_results(root_dir=root_dir, fewshot=1)
+        results_2shot = parse_fewshot_results(root_dir=root_dir, fewshot=2)
+        results_5shot = parse_fewshot_results(root_dir=root_dir, fewshot=5)
+        results_10shot = parse_fewshot_results(root_dir=root_dir, fewshot=10)
 
-    results_fewshot = {}
-    for d in (results_1shot, results_2shot, results_5shot, results_10shot):
-        results_fewshot = deep_merge_fewshot(results_fewshot, d)
+        results_fewshot = {}
+        for d in (results_1shot, results_2shot, results_5shot, results_10shot):
+            results_fewshot = deep_merge_fewshot(results_fewshot, d)
 
-    with open(f"results/{setting}/fewshot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
-        json.dump(results_fewshot, f, ensure_ascii=False, indent=2)
-    
-    make_fewshot_csv(results=results_fewshot, env=env, setting=setting)
+        with open(f"results/{setting}/fewshot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+            json.dump(results_fewshot, f, ensure_ascii=False, indent=2)
+        
+        make_fewshot_csv(results=results_fewshot, env=env, setting=setting)

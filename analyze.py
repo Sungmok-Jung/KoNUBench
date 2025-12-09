@@ -277,12 +277,17 @@ def save_fewshot_csv(method_name: str, merged_dict: dict, env: str):
 
 if __name__ == "__main__":
     env = sys.argv[1]
-    if sys.argv[1] == "gsds":
+    setting = sys.argv[2]
+    if env == "gsds" and setting == "baseline":
         root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
-    elif sys.argv[1] == "amd":
+    elif env == "gsds" and setting == "sft":
+        root_dir = '/shared/erc/lab08/korean_negation/gsds_sft/eval'
+    elif env == "amd" and setting == "baseline":
         root_dir = '/mnt/sm/KoNUBench/baseline'
+    elif env == "amd" and setting == "sft":
+        root_dir = '/mnt/sm/KoNUBench/sft/eval'
     else:
-        raise ValueError("env must be 'gsds' or 'amd'")
+        raise ValueError("invalid configuration: sys.argv[1] must be 'gsds' or 'amd', and sys.argv[2] must be 'baseline' or 'sft'.")
 
     # method별 산출물:
     #   - zero_shot_results[method]: model -> counts (그대로)
@@ -301,18 +306,20 @@ if __name__ == "__main__":
                 # 0shot은 result를 그대로 둔다 (model -> counts)
                 zero_shot_results[method] = res
             else:
-                # fewshot은 같은 method 안에서 병합: model -> "{shot}shot" -> seed -> counts
-                merged_fewshots[method] = merge_fewshot(merged_fewshots[method], shot, res)
+                if setting == 'baseline':
+                    # fewshot은 같은 method 안에서 병합: model -> "{shot}shot" -> seed -> counts
+                    merged_fewshots[method] = merge_fewshot(merged_fewshots[method], shot, res)
 
     # 필요하면 파일로도 저장
     
     for method in METHOD:
-        zero_out_name = f"analyze/analyze_{env}_{method}_0shot.json"
-        few_out_name = f"analyze/analyze_{env}_{method}_fewshot.json"
-
+        zero_out_name = f"analyze/{setting}/analyze_{env}_{method}_0shot.json"
         with open(zero_out_name, "w", encoding="utf-8") as f:
             json.dump(zero_shot_results[method], f, ensure_ascii=False, indent=2)
             save_zeroshot_csv(method, zero_shot_results[method], env)
-        with open(few_out_name, "w", encoding="utf-8") as f:
-            json.dump(merged_fewshots[method], f, ensure_ascii=False, indent=2)
-            save_fewshot_csv(method, merged_fewshots[method], env)
+        
+        if setting == 'baseline':
+            few_out_name = f"analyze/{setting}/analyze_{env}_{method}_fewshot.json"
+            with open(few_out_name, "w", encoding="utf-8") as f:
+                json.dump(merged_fewshots[method], f, ensure_ascii=False, indent=2)
+                save_fewshot_csv(method, merged_fewshots[method], env)
