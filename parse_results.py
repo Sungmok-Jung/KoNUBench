@@ -25,6 +25,9 @@ def parse_0shot_results(root_dir: str, env: str, setting: str):
                         data = json.load(f)
 
                     model = data['model_name_sanitized']
+                    prefix = "__mnt__sm__KoNUBench__sft__Models__"
+                    if model.startswith(prefix):
+                        model = model[len(prefix):]
 
                     if not (model in results):
                         results[model] = {task : {'acc': 0.0, 'acc_norm': 0.0} for task in ZEROSHOT_TASKS}
