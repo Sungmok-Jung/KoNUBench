@@ -25,7 +25,7 @@ def parse_0shot_results(root_dir: str, env: str, setting: str):
                         data = json.load(f)
 
                     model = data['model_name_sanitized']
-                    prefix = "__mnt__sm__KoNUBench__sft__Models__"
+                    prefix = "__mnt__sm__KoNUBench__sft__models__"
                     if model.startswith(prefix):
                         model = model[len(prefix):]
 
