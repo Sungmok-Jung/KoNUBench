@@ -192,16 +192,17 @@ def make_fewshot_csv(results: dict, env:str, setting:str):
 
 if __name__ == '__main__':
     env = sys.argv[1]
-    if env == "gsds":
-        root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
-    elif env == "amd":
-        root_dir = '/mnt/sm/KoNUBench/baseline'
-    else:
-        raise ValueError("env must be 'gsds' or 'amd'")
-    
     setting = sys.argv[2]
-    if setting not in ['baseline', 'sft']:
-        raise ValueError("setting must be 'baseline' or 'sft'")
+    if env == "gsds" and setting == "baseline":
+        root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
+    elif env == "gsds" and setting == "sft":
+        root_dir = '/shared/erc/lab08/korean_negation/gsds_sft/eval'
+    elif env == "amd" and setting == "baseline":
+        root_dir = '/mnt/sm/KoNUBench/baseline'
+    elif env == "amd" and setting == "sft":
+        root_dir = '/mnt/sm/KoNUBench/sft/eval'
+    else:
+        raise ValueError("invalid configuration: sys.argv[1] must be 'gsds' or 'amd', and sys.argv[2] must be 'baseline' or 'sft'.")
     
     results_0shot = parse_0shot_results(root_dir=root_dir, env=env, setting=setting)
     make_0shot_csv(results=results_0shot, env=env, setting=setting)
