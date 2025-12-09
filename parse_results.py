@@ -10,7 +10,10 @@ TIMESTAMP = NOW.strftime("%m%d_%H%M")
 ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag']
 def parse_0shot_results(root_dir: str, env: str, setting: str):
     results = {}
-    base = os.path.join(root_dir, f"0shot")
+    if setting == "baseline":
+        base = os.path.join(root_dir, f"0shot")
+    else:
+        base = root_dir
     for dirpath, dirnames, filenames in os.walk(base):
         for filename in filenames:
             # find the json files which starts with 'results'
