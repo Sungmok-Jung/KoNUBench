@@ -9,7 +9,8 @@ import deepspeed
 
 from load import (
     load_model_tokenizer,
-    tokenize_load_dataset,
+    tokenize_load_dataset_cloze,
+    tokenize_load_dataset_symbol,
     sft_load_dataset,
     deepspeed_init,
     deepspeed_destroy,
@@ -59,6 +60,9 @@ def parse_args():
     parser.add_argument("--lora_alpha", action="store", default=32, type=int)
     parser.add_argument("--lora_dropout", action="store", default=0.05, type=float)
 
+    # sft method
+    parser.add_arguement("--method", action="store", type=str)
+
     args = parser.parse_args()
 
     args_dict = vars(args)
@@ -76,12 +80,14 @@ def main():
 
     # load tokenizer & model
     model, tokenizer = load_model_tokenizer(args=args, summary=True)
-    # model.to("cuda") # potential problem
     
     if args.use_lora:
         model = build_peft_model(base_model=model)
 
-    train_dataset = tokenize_load_dataset(args, tokenizer)
+    if args.method == "cloze":
+        train_dataset = tokenize_load_dataset_cloze(args, tokenizer)
+    elif args.method == "symbol":
+        train_dataset = tokenize_load_dataset_symbol(args, tokenizer)
     args.num_dataset_rows = len(train_dataset)
 
     # deepspeed init
