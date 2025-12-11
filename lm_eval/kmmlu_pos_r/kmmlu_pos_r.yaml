@@ -1,4 +1,4 @@
-task: kmmlu_pos
+task: kmmlu_pos_r
 dataset_path: /root/KoNUBench/dataset/kmmlu_pos
 output_type: multiple_choice
 test_split: test
