@@ -66,17 +66,17 @@ def load_dataloader(args, dataset, collate_fn, rank):
 # forward for Pretraining / SFT
 def forward_one_step(model_engine, input_ids, target, attn_mask):
     # forward
-    # logits = model_engine(
-    #     input_ids=input_ids,
-    #     attn_mask=attn_mask
-    #     # token_type_ids=token_type_ids
-    # ).logits
-
     logits = model_engine(
         input_ids=input_ids,
-        attention_mask=attn_mask
+        attn_mask=attn_mask
         # token_type_ids=token_type_ids
     ).logits
+
+    # logits = model_engine(
+    #     input_ids=input_ids,
+    #     attention_mask=attn_mask
+    #     # token_type_ids=token_type_ids
+    # ).logits
     logits = logits.contiguous().view(-1, logits.shape[-1])
     target = target.contiguous().view(-1)
     loss = torch.nn.functional.cross_entropy(logits, target)
