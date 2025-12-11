@@ -61,7 +61,7 @@ def parse_args():
     parser.add_argument("--lora_dropout", action="store", default=0.05, type=float)
 
     # sft method
-    parser.add_arguement("--method", action="store", type=str)
+    parser.add_argument("--method", action="store", type=str)
 
     args = parser.parse_args()
 
