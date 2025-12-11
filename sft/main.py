@@ -88,6 +88,8 @@ def main():
         train_dataset = tokenize_load_dataset_cloze(args, tokenizer)
     elif args.method == "symbol":
         train_dataset = tokenize_load_dataset_symbol(args, tokenizer)
+    else:
+        raise ValueError("invalid method: method must be 'cloze' or 'symbol'.")
     args.num_dataset_rows = len(train_dataset)
 
     # deepspeed init
