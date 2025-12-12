@@ -7,7 +7,7 @@ from datetime import datetime
 NOW = datetime.now()
 TIMESTAMP = NOW.strftime("%m%d_%H%M")
 
-ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag', 'thunderllm-snu-ko-arc-challenge', 'thunderllm-snu-ko-arc-easy']
+ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_pos_r','kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag', 'thunderllm-snu-ko-arc-challenge', 'thunderllm-snu-ko-arc-easy']
 def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
     results = {}
     if setting == "baseline":
