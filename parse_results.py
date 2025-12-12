@@ -7,8 +7,8 @@ from datetime import datetime
 NOW = datetime.now()
 TIMESTAMP = NOW.strftime("%m%d_%H%M")
 
-ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag']
-def parse_0shot_results(root_dir: str, env: str, setting: str):
+ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag', 'thunderllm-snu-ko-arc-challenge', 'thunderllm-snu-ko-arc-easy']
+def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
     results = {}
     if setting == "baseline":
         base = os.path.join(root_dir, f"0shot")
@@ -25,7 +25,7 @@ def parse_0shot_results(root_dir: str, env: str, setting: str):
                         data = json.load(f)
 
                     model = data['model_name_sanitized']
-                    prefix = "__mnt__sm__KoNUBench__sft__models__"
+                    prefix = f"__mnt__sm__KoNUBench__sft__{method}__models__"
                     if model.startswith(prefix):
                         model = model[len(prefix):]
 
@@ -44,8 +44,12 @@ def parse_0shot_results(root_dir: str, env: str, setting: str):
                 except Exception as e:
                     print(f"failed to read file: {file_path} → {e}")
 
-    with open(f"results/{setting}/0shot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+    if setting == "baseline":
+        with open(f"results/{setting}/0shot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+    else:
+        with open(f"results/{setting}/{method}/0shot_{env}_{TIMESTAMP}.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)        
     
     return results
 
@@ -199,14 +203,15 @@ def make_fewshot_csv(results: dict, env:str, setting:str):
 if __name__ == '__main__':
     env = sys.argv[1]
     setting = sys.argv[2]
+    method = sys.argv[3] if len(sys.argv) > 3 else None
     if env == "gsds" and setting == "baseline":
         root_dir = '/shared/erc/lab08/korean_negation/gsds_baseline'
     elif env == "gsds" and setting == "sft":
-        root_dir = '/shared/erc/lab08/korean_negation/gsds_sft/eval'
+        root_dir = f'/shared/erc/lab08/korean_negation/gsds_sft/{method}/eval'
     elif env == "amd" and setting == "baseline":
         root_dir = '/mnt/sm/KoNUBench/baseline'
     elif env == "amd" and setting == "sft":
-        root_dir = '/mnt/sm/KoNUBench/sft/eval'
+        root_dir = f'/mnt/sm/KoNUBench/sft/{method}/eval'
     else:
         raise ValueError("invalid configuration: sys.argv[1] must be 'gsds' or 'amd', and sys.argv[2] must be 'baseline' or 'sft'.")
     
