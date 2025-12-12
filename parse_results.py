@@ -215,7 +215,7 @@ if __name__ == '__main__':
     else:
         raise ValueError("invalid configuration: sys.argv[1] must be 'gsds' or 'amd', and sys.argv[2] must be 'baseline' or 'sft'.")
     
-    results_0shot = parse_0shot_results(root_dir=root_dir, env=env, setting=setting)
+    results_0shot = parse_0shot_results(root_dir=root_dir, env=env, setting=setting, method=method)
     make_0shot_csv(results=results_0shot, env=env, setting=setting)
 
     if setting == 'baseline':
