@@ -126,7 +126,7 @@ def deep_merge_fewshot(dst, src):
 
     return dst
 
-def make_0shot_csv(results: dict, env: str, setting: str):
+def make_0shot_csv(results: dict, env: str, setting: str, method: str):
     rows = {}
     for model, task_dict in results.items():
         row = {}
@@ -149,8 +149,12 @@ def make_0shot_csv(results: dict, env: str, setting: str):
     df_out = df.copy().where(pd.notnull(df), None)
 
     # ----- save to csv -----
-    df_out.to_csv(f"results/{setting}/0shot_{env}_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
-    print(f"{setting}/0shot_{env}_{TIMESTAMP}.csv is created!")
+    if setting=="baseline":
+        df_out.to_csv(f"results/{setting}/0shot_{env}_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
+        print(f"{setting}/0shot_{env}_{TIMESTAMP}.csv is created!")
+    else:
+        df_out.to_csv(f"results/{setting}/{method}/0shot_{env}_{TIMESTAMP}.csv", encoding="utf-8-sig", float_format="%.6f")
+        print(f"{setting}/{method}/0shot_{env}_{TIMESTAMP}.csv is created!")        
 
 def make_fewshot_csv(results: dict, env:str, setting:str):
     rows = {}
@@ -216,7 +220,7 @@ if __name__ == '__main__':
         raise ValueError("invalid configuration: sys.argv[1] must be 'gsds' or 'amd', and sys.argv[2] must be 'baseline' or 'sft'.")
     
     results_0shot = parse_0shot_results(root_dir=root_dir, env=env, setting=setting, method=method)
-    make_0shot_csv(results=results_0shot, env=env, setting=setting)
+    make_0shot_csv(results=results_0shot, env=env, setting=setting, method=method)
 
     if setting == 'baseline':
         results_1shot = parse_fewshot_results(root_dir=root_dir, fewshot=1)
