@@ -24,10 +24,10 @@ def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
                     with open(file_path, "r", encoding="utf-8") as f:
                         data = json.load(f)
 
+                    model = data['model_name_sanitized']
                     if model.endswith("epoch0") or model.endswith("epoch1"):
                         continue
 
-                    model = data['model_name_sanitized']
                     prefix = f"__mnt__sm__KoNUBench__sft__{method}__models__"
                     prefix2 = "__mnt__sm__KoNUBench__sft__models__"
                     if model.startswith(prefix):
