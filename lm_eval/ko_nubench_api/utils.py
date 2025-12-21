@@ -35,7 +35,7 @@ def process_docs_api(dataset) -> Dataset:
     정답:
     """
 
-    prompt = f"문제: 다음의 원문을 standard negation을 활용하여 올바르게 부정한 문장을 고르시오.\n원문: {doc['original_sentence']}\n"
+    prompt = f"문제: 다음의 원문을 standard negation을 활용하여 올바르게 부정한 문장을 고르시오(정답 선지(A, B, C, D)만 답하고, 그 외에 다른 말은 하지 말 것).\n원문: {doc['original_sentence']}\n"
     if (local == None) or (local == ""):
       choices_str = [std, contra, para]
       choices = ["A", "B", "C"]
