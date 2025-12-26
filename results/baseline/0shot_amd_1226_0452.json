@@ -1,0 +1,2554 @@
+{
+  "meta-llama__Llama-3.1-8B": {
+    "ko_nubench_symbol": {
+      "acc": 0.5358255451713395,
+      "acc_norm": 0.5358255451713395
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3956386292834891,
+      "acc_norm": 0.40420560747663553
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6093094772155437,
+      "acc_norm": 0.6093094772155437
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6161587922840369,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.602599944087224,
+      "acc_norm": 0.602599944087224
+    },
+    "kobest_boolq": {
+      "acc": 0.5299145299145299,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4821937321937322,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8223905723905723,
+      "acc_norm": 0.8257575757575758
+    },
+    "arc_challenge": {
+      "acc": 0.5238907849829352,
+      "acc_norm": 0.5477815699658704
+    },
+    "winogrande": {
+      "acc": 0.744277821625888,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6073491336387173,
+      "acc_norm": 0.793168691495718
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.2-3B-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.617601246105919,
+      "acc_norm": 0.617601246105919
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3839563862928349,
+      "acc_norm": 0.411214953271028
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5768800670953312,
+      "acc_norm": 0.5768800670953312
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.575482247693598,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5946323734973441,
+      "acc_norm": 0.5946323734973441
+    },
+    "kobest_boolq": {
+      "acc": 0.5149572649572649,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.47863247863247865,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7533670033670034,
+      "acc_norm": 0.7112794612794613
+    },
+    "arc_challenge": {
+      "acc": 0.4334470989761092,
+      "acc_norm": 0.46245733788395904
+    },
+    "winogrande": {
+      "acc": 0.6882399368587214,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5333598884684326,
+      "acc_norm": 0.7156940848436566
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-1.5B": {
+    "ko_nubench_symbol": {
+      "acc": 0.4665109034267913,
+      "acc_norm": 0.4665109034267913
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3613707165109034,
+      "acc_norm": 0.3847352024922118
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6346100083869164,
+      "acc_norm": 0.6346100083869164
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6252446183953033,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6185350852669835,
+      "acc_norm": 0.6185350852669835
+    },
+    "kobest_boolq": {
+      "acc": 0.6930199430199431,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.50997150997151,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6931818181818182,
+      "acc_norm": 0.6607744107744108
+    },
+    "arc_challenge": {
+      "acc": 0.3873720136518771,
+      "acc_norm": 0.43856655290102387
+    },
+    "winogrande": {
+      "acc": 0.5737963693764798,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4649472216689902,
+      "acc_norm": 0.608743278231428
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.2-1B": {
+    "ko_nubench_symbol": {
+      "acc": 0.2616822429906542,
+      "acc_norm": 0.2616822429906542
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.37383177570093457,
+      "acc_norm": 0.3839563862928349
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.49748392507688005,
+      "acc_norm": 0.49748392507688005
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5138384120771596,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5121610287950796,
+      "acc_norm": 0.5121610287950796
+    },
+    "kobest_boolq": {
+      "acc": 0.4943019943019943,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.49786324786324787,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6603535353535354,
+      "acc_norm": 0.6182659932659933
+    },
+    "arc_challenge": {
+      "acc": 0.31569965870307165,
+      "acc_norm": 0.371160409556314
+    },
+    "winogrande": {
+      "acc": 0.6069455406471981,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.48157737502489545,
+      "acc_norm": 0.6413065126468831
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "ko_nubench_symbol": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_api": {
+      "acc": 0.9813084112149533,
+      "acc_norm": 0
+    },
+    "kmmlu_pos": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "winogrande": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "hellaswag": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "skt__A.X-4.0": {
+    "ko_nubench_symbol": {
+      "acc": 0.9579439252336449,
+      "acc_norm": 0.9579439252336449
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.7383177570093458,
+      "acc_norm": 0.7632398753894081
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.8648308638523903,
+      "acc_norm": 0.8648308638523903
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.8679060665362035,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.8768521107072966,
+      "acc_norm": 0.8768521107072966
+    },
+    "kobest_boolq": {
+      "acc": 0.9472934472934473,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.7756410256410257,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8766835016835017,
+      "acc_norm": 0.8627946127946128
+    },
+    "arc_challenge": {
+      "acc": 0.6510238907849829,
+      "acc_norm": 0.6706484641638225
+    },
+    "winogrande": {
+      "acc": 0.8018942383583267,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6745668193586934,
+      "acc_norm": 0.8601872137024497
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.6538131962296486,
+      "acc_norm": 0.7112253641816624
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.8451178451178452,
+      "acc_norm": 0.8577441077441077
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-7.8B": {
+    "ko_nubench_symbol": {
+      "acc": 0.4369158878504673,
+      "acc_norm": 0.4369158878504673
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5599688473520249,
+      "acc_norm": 0.5934579439252337
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5629018730779983,
+      "acc_norm": 0.5629018730779983
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5724070450097848,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.48560246016214703,
+      "acc_norm": 0.48560246016214703
+    },
+    "kobest_boolq": {
+      "acc": 0.6958689458689459,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4893162393162393,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6755050505050505,
+      "acc_norm": 0.6498316498316499
+    },
+    "arc_challenge": {
+      "acc": 0.4044368600682594,
+      "acc_norm": 0.4377133105802048
+    },
+    "winogrande": {
+      "acc": 0.5777426992896606,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4765982871937861,
+      "acc_norm": 0.6360286795459071
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "ko_nubench_symbol": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_api": {
+      "acc": 0.9283489096573209,
+      "acc_norm": 0
+    },
+    "kmmlu_pos": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "winogrande": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "hellaswag": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Think-14B": {
+    "ko_nubench_symbol": {
+      "acc": 0.7811526479750779,
+      "acc_norm": 0.7811526479750779
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.45560747663551404,
+      "acc_norm": 0.4750778816199377
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7475538160469667,
+      "acc_norm": 0.7475538160469667
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7471344702264467,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7569192060385798,
+      "acc_norm": 0.7569192060385798
+    },
+    "kobest_boolq": {
+      "acc": 0.8696581196581197,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.665954415954416,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7937710437710438,
+      "acc_norm": 0.7487373737373737
+    },
+    "arc_challenge": {
+      "acc": 0.5264505119453925,
+      "acc_norm": 0.5469283276450512
+    },
+    "winogrande": {
+      "acc": 0.7119179163378059,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6018721370244972,
+      "acc_norm": 0.793666600278829
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.2-1B-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.3356697819314642,
+      "acc_norm": 0.3356697819314642
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3559190031152648,
+      "acc_norm": 0.37227414330218067
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.523762929829466,
+      "acc_norm": 0.523762929829466
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5201285993849595,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5064299692479731,
+      "acc_norm": 0.5064299692479731
+    },
+    "kobest_boolq": {
+      "acc": 0.5035612535612536,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4807692307692308,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6885521885521886,
+      "acc_norm": 0.6384680134680135
+    },
+    "arc_challenge": {
+      "acc": 0.3464163822525597,
+      "acc_norm": 0.3771331058020478
+    },
+    "winogrande": {
+      "acc": 0.6132596685082873,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4567815176259709,
+      "acc_norm": 0.6159131647082254
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "mistralai__Mistral-Nemo-Instruct-2407": {
+    "ko_nubench_symbol": {
+      "acc": 0.6510903426791277,
+      "acc_norm": 0.6510903426791277
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5257009345794392,
+      "acc_norm": 0.5560747663551402
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6305563321218899,
+      "acc_norm": 0.6305563321218899
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.648448420464076,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.62175006989097,
+      "acc_norm": 0.62175006989097
+    },
+    "kobest_boolq": {
+      "acc": 0.7606837606837606,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4757834757834758,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8223905723905723,
+      "acc_norm": 0.805976430976431
+    },
+    "arc_challenge": {
+      "acc": 0.5614334470989761,
+      "acc_norm": 0.5955631399317406
+    },
+    "winogrande": {
+      "acc": 0.7687450670876085,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6354311890061741,
+      "acc_norm": 0.8239394542919737
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-4B": {
+    "ko_nubench_symbol": {
+      "acc": 0.8052959501557633,
+      "acc_norm": 0.8052959501557633
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.45560747663551404,
+      "acc_norm": 0.4766355140186916
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6589320659770758,
+      "acc_norm": 0.6589320659770758
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6662007268660889,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5953312831982108,
+      "acc_norm": 0.5953312831982108
+    },
+    "kobest_boolq": {
+      "acc": 0.5356125356125356,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48148148148148145,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8072390572390572,
+      "acc_norm": 0.7853535353535354
+    },
+    "arc_challenge": {
+      "acc": 0.5025597269624573,
+      "acc_norm": 0.5366894197952219
+    },
+    "winogrande": {
+      "acc": 0.659037095501184,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5216092411870146,
+      "acc_norm": 0.6838279227245568
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "LGAI-EXAONE__EXAONE-4.0-1.2B": {
+    "ko_nubench_symbol": {
+      "acc": 0.26479750778816197,
+      "acc_norm": 0.26479750778816197
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.2881619937694704,
+      "acc_norm": 0.32165109034267914
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.50083869164104,
+      "acc_norm": 0.50083869164104
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5053117137265866,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5096449538719597,
+      "acc_norm": 0.5096449538719597
+    },
+    "kobest_boolq": {
+      "acc": 0.5142450142450142,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4843304843304843,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.3367003367003367,
+      "acc_norm": 0.3303872053872054
+    },
+    "arc_challenge": {
+      "acc": 0.2150170648464164,
+      "acc_norm": 0.24658703071672355
+    },
+    "winogrande": {
+      "acc": 0.5011838989739542,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.28689504082852024,
+      "acc_norm": 0.3114917347142004
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "upstage__SOLAR-10.7B-Instruct-v1.0": {
+    "ko_nubench_symbol": {
+      "acc": 0.5475077881619937,
+      "acc_norm": 0.5475077881619937
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.6129283489096573,
+      "acc_norm": 0.6479750778816199
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6266424377970367,
+      "acc_norm": 0.6266424377970367
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6213307240704501,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6044171093094772,
+      "acc_norm": 0.6044171093094772
+    },
+    "kobest_boolq": {
+      "acc": 0.8603988603988604,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.6766381766381766,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8345959595959596,
+      "acc_norm": 0.811026936026936
+    },
+    "arc_challenge": {
+      "acc": 0.6040955631399317,
+      "acc_norm": 0.6220136518771331
+    },
+    "winogrande": {
+      "acc": 0.7513812154696132,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6876120294761999,
+      "acc_norm": 0.86566421031667
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "K-intelligence__Midm-2.0-Mini-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.5537383177570093,
+      "acc_norm": 0.5537383177570093
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5599688473520249,
+      "acc_norm": 0.6043613707165109
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6346100083869164,
+      "acc_norm": 0.6346100083869164
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6252446183953033,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6313950237629298,
+      "acc_norm": 0.6313950237629298
+    },
+    "kobest_boolq": {
+      "acc": 0.8732193732193733,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.6816239316239316,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7828282828282829,
+      "acc_norm": 0.7849326599326599
+    },
+    "arc_challenge": {
+      "acc": 0.46331058020477817,
+      "acc_norm": 0.5042662116040956
+    },
+    "winogrande": {
+      "acc": 0.6677190213101816,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5244971121290579,
+      "acc_norm": 0.7024497112129058
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.1-8B-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.5716510903426791,
+      "acc_norm": 0.5716510903426791
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3598130841121495,
+      "acc_norm": 0.37383177570093457
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5774391948560246,
+      "acc_norm": 0.5774391948560246
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5654179480011182,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5629018730779983,
+      "acc_norm": 0.5629018730779983
+    },
+    "kobest_boolq": {
+      "acc": 0.5405982905982906,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48148148148148145,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.803030303030303,
+      "acc_norm": 0.7723063973063973
+    },
+    "arc_challenge": {
+      "acc": 0.5273037542662116,
+      "acc_norm": 0.5418088737201365
+    },
+    "winogrande": {
+      "acc": 0.7411207576953434,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5702051384186417,
+      "acc_norm": 0.7970523800039833
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.1-70B": {
+    "ko_nubench_symbol": {
+      "acc": 0.7663551401869159,
+      "acc_norm": 0.7663551401869159
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5397196261682243,
+      "acc_norm": 0.5747663551401869
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7036622868325413,
+      "acc_norm": 0.7036622868325413
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7028235951915013,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7077159630975678,
+      "acc_norm": 0.7077159630975678
+    },
+    "kobest_boolq": {
+      "acc": 0.6766381766381766,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4964387464387464,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.851010101010101,
+      "acc_norm": 0.8152356902356902
+    },
+    "arc_challenge": {
+      "acc": 0.5964163822525598,
+      "acc_norm": 0.613481228668942
+    },
+    "winogrande": {
+      "acc": 0.8161010260457774,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6749651463851822,
+      "acc_norm": 0.8575980880302728
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "kakaocorp__kanana-1.5-8b-base": {
+    "ko_nubench_symbol": {
+      "acc": 0.43613707165109034,
+      "acc_norm": 0.43613707165109034
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4353582554517134,
+      "acc_norm": 0.45794392523364486
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6650824713447022,
+      "acc_norm": 0.6650824713447022
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6692759295499021,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6625663964215823,
+      "acc_norm": 0.6625663964215823
+    },
+    "kobest_boolq": {
+      "acc": 0.6374643874643875,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5121082621082621,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.805976430976431,
+      "acc_norm": 0.8127104377104377
+    },
+    "arc_challenge": {
+      "acc": 0.5102389078498294,
+      "acc_norm": 0.5409556313993175
+    },
+    "winogrande": {
+      "acc": 0.7300710339384373,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5849432383987253,
+      "acc_norm": 0.7744473212507469
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+    "ko_nubench_symbol": {
+      "acc": 0.7297507788161994,
+      "acc_norm": 0.7297507788161994
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.631619937694704,
+      "acc_norm": 0.6580996884735203
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5914173888733576,
+      "acc_norm": 0.5914173888733576
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5909980430528375,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5833100363433045,
+      "acc_norm": 0.5833100363433045
+    },
+    "kobest_boolq": {
+      "acc": 0.7706552706552706,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5598290598290598,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8345959595959596,
+      "acc_norm": 0.8177609427609428
+    },
+    "arc_challenge": {
+      "acc": 0.5836177474402731,
+      "acc_norm": 0.6015358361774744
+    },
+    "winogrande": {
+      "acc": 0.7482241515390686,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6569408484365664,
+      "acc_norm": 0.8328022306313483
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.1-70B-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.8099688473520249,
+      "acc_norm": 0.8099688473520249
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.48052959501557635,
+      "acc_norm": 0.5007788161993769
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7474140341067934,
+      "acc_norm": 0.7474140341067934
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7549622588761532,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.74979032708974,
+      "acc_norm": 0.74979032708974
+    },
+    "kobest_boolq": {
+      "acc": 0.8974358974358975,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.6346153846153846,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8632154882154882,
+      "acc_norm": 0.8337542087542088
+    },
+    "arc_challenge": {
+      "acc": 0.6126279863481229,
+      "acc_norm": 0.6245733788395904
+    },
+    "winogrande": {
+      "acc": 0.8263614838200474,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6620195180242979,
+      "acc_norm": 0.8535152360087632
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "mistralai__Mistral-7B-v0.3": {
+    "ko_nubench_symbol": {
+      "acc": 0.4688473520249221,
+      "acc_norm": 0.4688473520249221
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4914330218068536,
+      "acc_norm": 0.514797507788162
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5627620911378249,
+      "acc_norm": 0.5627620911378249
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5854067654459044,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.523762929829466,
+      "acc_norm": 0.523762929829466
+    },
+    "kobest_boolq": {
+      "acc": 0.5804843304843305,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48148148148148145,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8009259259259259,
+      "acc_norm": 0.8013468013468014
+    },
+    "arc_challenge": {
+      "acc": 0.5068259385665529,
+      "acc_norm": 0.5443686006825939
+    },
+    "winogrande": {
+      "acc": 0.739542225730071,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6118303126867158,
+      "acc_norm": 0.8064130651264688
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "skt__ko-gpt-trinity-1.2B-v0.5": {
+    "ko_nubench_symbol": {
+      "acc": 0.26401869158878505,
+      "acc_norm": 0.26401869158878505
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.32087227414330216,
+      "acc_norm": 0.3333333333333333
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.4938495946323735,
+      "acc_norm": 0.4938495946323735
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5104836455129997,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5085266983505731,
+      "acc_norm": 0.5085266983505731
+    },
+    "kobest_boolq": {
+      "acc": 0.48646723646723644,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4893162393162393,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.3143939393939394,
+      "acc_norm": 0.3085016835016835
+    },
+    "arc_challenge": {
+      "acc": 0.17064846416382254,
+      "acc_norm": 0.20477815699658702
+    },
+    "winogrande": {
+      "acc": 0.5090765588003157,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.27544313881696875,
+      "acc_norm": 0.29067914758016333
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-14B-Base": {
+    "ko_nubench_symbol": {
+      "acc": 0.8862928348909658,
+      "acc_norm": 0.8862928348909658
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.6230529595015576,
+      "acc_norm": 0.6580996884735203
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6901034386357283,
+      "acc_norm": 0.6901034386357283
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7071568353368745,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7632093933463796,
+      "acc_norm": 0.7632093933463796
+    },
+    "kobest_boolq": {
+      "acc": 0.6773504273504274,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5078347578347578,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8354377104377104,
+      "acc_norm": 0.8198653198653199
+    },
+    "arc_challenge": {
+      "acc": 0.5580204778156996,
+      "acc_norm": 0.590443686006826
+    },
+    "winogrande": {
+      "acc": 0.7403314917127072,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6182035451105358,
+      "acc_norm": 0.8138816968731328
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "mistralai__Mistral-Small-24B-Base-2501": {
+    "ko_nubench_symbol": {
+      "acc": 0.7157320872274143,
+      "acc_norm": 0.7157320872274143
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.57398753894081,
+      "acc_norm": 0.6129283489096573
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7194576460721275,
+      "acc_norm": 0.7194576460721275
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7131674587643276,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6678781101481689,
+      "acc_norm": 0.6678781101481689
+    },
+    "kobest_boolq": {
+      "acc": 0.8767806267806267,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5377492877492878,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8535353535353535,
+      "acc_norm": 0.8455387205387206
+    },
+    "arc_challenge": {
+      "acc": 0.5938566552901023,
+      "acc_norm": 0.6279863481228669
+    },
+    "winogrande": {
+      "acc": 0.7955801104972375,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.638020314678351,
+      "acc_norm": 0.8343955387373033
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "K-intelligence__Midm-2.0-Base-Instruct": {
+    "ko_nubench_symbol": {
+      "acc": 0.5957943925233645,
+      "acc_norm": 0.5957943925233645
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.6121495327102804,
+      "acc_norm": 0.6612149532710281
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7377690802348337,
+      "acc_norm": 0.7377690802348337
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7376292982946603,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6169974839250769,
+      "acc_norm": 0.6169974839250769
+    },
+    "kobest_boolq": {
+      "acc": 0.9209401709401709,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.7727920227920227,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8606902356902357,
+      "acc_norm": 0.8446969696969697
+    },
+    "arc_challenge": {
+      "acc": 0.5767918088737202,
+      "acc_norm": 0.6151877133105802
+    },
+    "winogrande": {
+      "acc": 0.734017363851618,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6097390957976498,
+      "acc_norm": 0.8040231029675363
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "gpt-4.1-mini": {
+    "ko_nubench_symbol": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "ko_nubench_api": {
+      "acc": 0.8309968847352025,
+      "acc_norm": 0
+    },
+    "kmmlu_pos": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "arc_challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "winogrande": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "hellaswag": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+    "ko_nubench_symbol": {
+      "acc": 0.8185358255451713,
+      "acc_norm": 0.8185358255451713
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5693146417445483,
+      "acc_norm": 0.6035825545171339
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.723091976516634,
+      "acc_norm": 0.723091976516634
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7188985183114341,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.698909700866648,
+      "acc_norm": 0.698909700866648
+    },
+    "kobest_boolq": {
+      "acc": 0.9273504273504274,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5811965811965812,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8745791245791246,
+      "acc_norm": 0.8737373737373737
+    },
+    "arc_challenge": {
+      "acc": 0.6399317406143344,
+      "acc_norm": 0.6629692832764505
+    },
+    "winogrande": {
+      "acc": 0.797947908445146,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6341366261700856,
+      "acc_norm": 0.834196375224059
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-1.7B": {
+    "ko_nubench_symbol": {
+      "acc": 0.7609034267912772,
+      "acc_norm": 0.7609034267912772
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5179127725856698,
+      "acc_norm": 0.5482866043613707
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6077718758736371,
+      "acc_norm": 0.6077718758736371
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6100083869164104,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5718479172490915,
+      "acc_norm": 0.5718479172490915
+    },
+    "kobest_boolq": {
+      "acc": 0.5192307692307693,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48646723646723644,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7209595959595959,
+      "acc_norm": 0.696969696969697
+    },
+    "arc_challenge": {
+      "acc": 0.40102389078498296,
+      "acc_norm": 0.4283276450511945
+    },
+    "winogrande": {
+      "acc": 0.6172059984214681,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4607647878908584,
+      "acc_norm": 0.6038637721569409
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "meta-llama__Llama-3.2-3B": {
+    "ko_nubench_symbol": {
+      "acc": 0.5202492211838006,
+      "acc_norm": 0.5202492211838006
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.43457943925233644,
+      "acc_norm": 0.4517133956386293
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5424937098126922,
+      "acc_norm": 0.5424937098126922
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5587084148727984,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5670953312831982,
+      "acc_norm": 0.5670953312831982
+    },
+    "kobest_boolq": {
+      "acc": 0.542022792022792,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.47364672364672367,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7491582491582491,
+      "acc_norm": 0.7184343434343434
+    },
+    "arc_challenge": {
+      "acc": 0.4274744027303754,
+      "acc_norm": 0.46245733788395904
+    },
+    "winogrande": {
+      "acc": 0.696921862667719,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5572595100577574,
+      "acc_norm": 0.7409878510256921
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "upstage__SOLAR-10.7B-v1.0": {
+    "ko_nubench_symbol": {
+      "acc": 0.4205607476635514,
+      "acc_norm": 0.4205607476635514
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.40498442367601245,
+      "acc_norm": 0.4221183800623053
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5817724350013979,
+      "acc_norm": 0.5817724350013979
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5905786972323176,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5395582890690522,
+      "acc_norm": 0.5395582890690522
+    },
+    "kobest_boolq": {
+      "acc": 0.5056980056980057,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4807692307692308,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8076599326599326,
+      "acc_norm": 0.7803030303030303
+    },
+    "arc_challenge": {
+      "acc": 0.5102389078498294,
+      "acc_norm": 0.5546075085324232
+    },
+    "winogrande": {
+      "acc": 0.7466456195737964,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6395140410276837,
+      "acc_norm": 0.8308105954989046
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-0.6B-Base": {
+    "ko_nubench_symbol": {
+      "acc": 0.5163551401869159,
+      "acc_norm": 0.5163551401869159
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3894080996884735,
+      "acc_norm": 0.4135514018691589
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.5419345820519988,
+      "acc_norm": 0.5419345820519988
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5437517472742521,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5686329326251048,
+      "acc_norm": 0.5686329326251048
+    },
+    "kobest_boolq": {
+      "acc": 0.5206552706552706,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.49216524216524216,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6548821548821548,
+      "acc_norm": 0.5787037037037037
+    },
+    "arc_challenge": {
+      "acc": 0.3378839590443686,
+      "acc_norm": 0.3796928327645051
+    },
+    "winogrande": {
+      "acc": 0.5911602209944752,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.41107349133638715,
+      "acc_norm": 0.5358494323839873
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "LGAI-EXAONE__EXAONE-4.0-32B": {
+    "ko_nubench_symbol": {
+      "acc": 0.8154205607476636,
+      "acc_norm": 0.8154205607476636
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5015576323987538,
+      "acc_norm": 0.5186915887850467
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7419625384400336,
+      "acc_norm": 0.7419625384400336
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7447581772435001,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7539837852949399,
+      "acc_norm": 0.7539837852949399
+    },
+    "kobest_boolq": {
+      "acc": 0.8112535612535613,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5277777777777778,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8215488215488216,
+      "acc_norm": 0.7958754208754208
+    },
+    "arc_challenge": {
+      "acc": 0.5469283276450512,
+      "acc_norm": 0.5716723549488054
+    },
+    "winogrande": {
+      "acc": 0.691397000789266,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5621390161322446,
+      "acc_norm": 0.7429794861581358
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.5544130248500428,
+      "acc_norm": 0.610968294772922
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.7849326599326599,
+      "acc_norm": 0.7920875420875421
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-2.4B": {
+    "ko_nubench_symbol": {
+      "acc": 0.40264797507788164,
+      "acc_norm": 0.40264797507788164
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3574766355140187,
+      "acc_norm": 0.4322429906542056
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.536483086385239,
+      "acc_norm": 0.536483086385239
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.5257198769918926,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.4783337992731339,
+      "acc_norm": 0.4783337992731339
+    },
+    "kobest_boolq": {
+      "acc": 0.50997150997151,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4821937321937322,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.5989057239057239,
+      "acc_norm": 0.5433501683501684
+    },
+    "arc_challenge": {
+      "acc": 0.35238907849829354,
+      "acc_norm": 0.3839590443686007
+    },
+    "winogrande": {
+      "acc": 0.5469613259668509,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4253136825333599,
+      "acc_norm": 0.5518820952001593
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-32B": {
+    "ko_nubench_symbol": {
+      "acc": 0.7172897196261683,
+      "acc_norm": 0.7172897196261683
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5833333333333334,
+      "acc_norm": 0.6012461059190031
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6586525020967291,
+      "acc_norm": 0.6586525020967291
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6547386077718759,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5655577299412916,
+      "acc_norm": 0.5655577299412916
+    },
+    "kobest_boolq": {
+      "acc": 0.853988603988604,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.6823361823361823,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7268518518518519,
+      "acc_norm": 0.7150673400673401
+    },
+    "arc_challenge": {
+      "acc": 0.4616040955631399,
+      "acc_norm": 0.4880546075085324
+    },
+    "winogrande": {
+      "acc": 0.664561957379637,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5295757817167894,
+      "acc_norm": 0.7021509659430393
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.4944301628106255,
+      "acc_norm": 0.5347043701799485
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.7079124579124579,
+      "acc_norm": 0.7251683501683501
+    }
+  },
+  "mistralai__Mistral-Nemo-Base-2407": {
+    "ko_nubench_symbol": {
+      "acc": 0.5124610591900312,
+      "acc_norm": 0.5124610591900312
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4735202492211838,
+      "acc_norm": 0.4968847352024922
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6534805703103159,
+      "acc_norm": 0.6534805703103159
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6545988258317026,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5458484763768521,
+      "acc_norm": 0.5458484763768521
+    },
+    "kobest_boolq": {
+      "acc": 0.6652421652421653,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.46937321937321935,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8333333333333334,
+      "acc_norm": 0.8354377104377104
+    },
+    "arc_challenge": {
+      "acc": 0.5674061433447098,
+      "acc_norm": 0.5955631399317406
+    },
+    "winogrande": {
+      "acc": 0.7687450670876085,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.6323441545508863,
+      "acc_norm": 0.8303126867157936
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-14B": {
+    "ko_nubench_symbol": {
+      "acc": 0.9057632398753894,
+      "acc_norm": 0.9057632398753894
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4618380062305296,
+      "acc_norm": 0.47897196261682246
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.701845121610288,
+      "acc_norm": 0.701845121610288
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7072966172770478,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7549622588761532,
+      "acc_norm": 0.7549622588761532
+    },
+    "kobest_boolq": {
+      "acc": 0.6403133903133903,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5405982905982906,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8413299663299664,
+      "acc_norm": 0.8282828282828283
+    },
+    "arc_challenge": {
+      "acc": 0.5870307167235495,
+      "acc_norm": 0.6015358361774744
+    },
+    "winogrande": {
+      "acc": 0.7300710339384373,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.609838677554272,
+      "acc_norm": 0.7893845847440749
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-1.7B-Base": {
+    "ko_nubench_symbol": {
+      "acc": 0.647196261682243,
+      "acc_norm": 0.647196261682243
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.602803738317757,
+      "acc_norm": 0.6487538940809969
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6203522504892368,
+      "acc_norm": 0.6203522504892368
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6087503494548504,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5494828068213586,
+      "acc_norm": 0.5494828068213586
+    },
+    "kobest_boolq": {
+      "acc": 0.6168091168091168,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48717948717948717,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7335858585858586,
+      "acc_norm": 0.6830808080808081
+    },
+    "arc_challenge": {
+      "acc": 0.41467576791808874,
+      "acc_norm": 0.44880546075085326
+    },
+    "winogrande": {
+      "acc": 0.6440410418310971,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4939255128460466,
+      "acc_norm": 0.6654052977494523
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-0.5B": {
+    "ko_nubench_symbol": {
+      "acc": 0.5272585669781932,
+      "acc_norm": 0.5272585669781932
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.3512461059190031,
+      "acc_norm": 0.38006230529595014
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6084707855745037,
+      "acc_norm": 0.6084707855745037
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6059547106513838,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5985462678221973,
+      "acc_norm": 0.5985462678221973
+    },
+    "kobest_boolq": {
+      "acc": 0.5349002849002849,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48148148148148145,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.6999158249158249,
+      "acc_norm": 0.6540404040404041
+    },
+    "arc_challenge": {
+      "acc": 0.35494880546075086,
+      "acc_norm": 0.3728668941979522
+    },
+    "winogrande": {
+      "acc": 0.5461720599842147,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4100776737701653,
+      "acc_norm": 0.5218084047002589
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-4B-Base": {
+    "ko_nubench_symbol": {
+      "acc": 0.822429906542056,
+      "acc_norm": 0.822429906542056
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.6487538940809969,
+      "acc_norm": 0.6783489096573209
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6905227844562483,
+      "acc_norm": 0.6905227844562483
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.687447581772435,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7015655577299413,
+      "acc_norm": 0.7015655577299413
+    },
+    "kobest_boolq": {
+      "acc": 0.6367521367521367,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4886039886039886,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7882996632996633,
+      "acc_norm": 0.7575757575757576
+    },
+    "arc_challenge": {
+      "acc": 0.47696245733788395,
+      "acc_norm": 0.514505119453925
+    },
+    "winogrande": {
+      "acc": 0.7048145224940805,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5457080262895837,
+      "acc_norm": 0.7371041625174268
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "skt__A.X-4.0-Light": {
+    "ko_nubench_symbol": {
+      "acc": 0.8496884735202492,
+      "acc_norm": 0.8496884735202492
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.690809968847352,
+      "acc_norm": 0.7126168224299065
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7675426334917529,
+      "acc_norm": 0.7675426334917529
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7627900475258597,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7622309197651663,
+      "acc_norm": 0.7622309197651663
+    },
+    "kobest_boolq": {
+      "acc": 0.9301994301994302,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.7492877492877493,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8055555555555556,
+      "acc_norm": 0.7449494949494949
+    },
+    "arc_challenge": {
+      "acc": 0.5418088737201365,
+      "acc_norm": 0.5588737201365188
+    },
+    "winogrande": {
+      "acc": 0.7111286503551697,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5967934674367655,
+      "acc_norm": 0.7714598685520813
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-8B-Base": {
+    "ko_nubench_symbol": {
+      "acc": 0.8551401869158879,
+      "acc_norm": 0.8551401869158879
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.5630841121495327,
+      "acc_norm": 0.6051401869158879
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7271456527816607,
+      "acc_norm": 0.7271456527816607
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7254682694995807,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.7359519150125804,
+      "acc_norm": 0.7359519150125804
+    },
+    "kobest_boolq": {
+      "acc": 0.5719373219373219,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48005698005698005,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8177609427609428,
+      "acc_norm": 0.8026094276094277
+    },
+    "arc_challenge": {
+      "acc": 0.5247440273037542,
+      "acc_norm": 0.5674061433447098
+    },
+    "winogrande": {
+      "acc": 0.7269139700078927,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5891256721768572,
+      "acc_norm": 0.785700059749054
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "kakaocorp__kanana-1.5-2.1b-instruct-2505": {
+    "ko_nubench_symbol": {
+      "acc": 0.5747663551401869,
+      "acc_norm": 0.5747663551401869
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.6199376947040498,
+      "acc_norm": 0.6464174454828661
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6682974559686888,
+      "acc_norm": 0.6682974559686888
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6724909141738887,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.6453732177802628,
+      "acc_norm": 0.6453732177802628
+    },
+    "kobest_boolq": {
+      "acc": 0.6638176638176638,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.5149572649572649,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7798821548821548,
+      "acc_norm": 0.7390572390572391
+    },
+    "arc_challenge": {
+      "acc": 0.4726962457337884,
+      "acc_norm": 0.5008532423208191
+    },
+    "winogrande": {
+      "acc": 0.6298342541436464,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5083648675562636,
+      "acc_norm": 0.668990240987851
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "kakaocorp__kanana-1.5-2.1b-base": {
+    "ko_nubench_symbol": {
+      "acc": 0.4517133956386293,
+      "acc_norm": 0.4517133956386293
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.4797507788161994,
+      "acc_norm": 0.5007788161993769
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.6404808498741963,
+      "acc_norm": 0.6404808498741963
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.6269220016773833,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.5735253005311713,
+      "acc_norm": 0.5735253005311713
+    },
+    "kobest_boolq": {
+      "acc": 0.5477207977207977,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.48504273504273504,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.7769360269360269,
+      "acc_norm": 0.7832491582491582
+    },
+    "arc_challenge": {
+      "acc": 0.47440273037542663,
+      "acc_norm": 0.5059726962457338
+    },
+    "winogrande": {
+      "acc": 0.6385161799526441,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.4965146385182235,
+      "acc_norm": 0.660426209918343
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  },
+  "Qwen__Qwen3-8B": {
+    "ko_nubench_symbol": {
+      "acc": 0.7484423676012462,
+      "acc_norm": 0.7484423676012462
+    },
+    "ko_nubench_cloze": {
+      "acc": 0.46105919003115264,
+      "acc_norm": 0.4766355140186916
+    },
+    "ko_nubench_api": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "kmmlu_pos": {
+      "acc": 0.7075761811573945,
+      "acc_norm": 0.7075761811573945
+    },
+    "kmmlu_pos_r": {
+      "acc": 0.7025440313111546,
+      "acc_norm": null
+    },
+    "kmmlu_neg": {
+      "acc": 0.687866927592955,
+      "acc_norm": 0.687866927592955
+    },
+    "kobest_boolq": {
+      "acc": 0.6118233618233618,
+      "acc_norm": null
+    },
+    "kobest_boolq_neg": {
+      "acc": 0.4886039886039886,
+      "acc_norm": 0.5192307692307693
+    },
+    "arc_easy": {
+      "acc": 0.8345959595959596,
+      "acc_norm": 0.8085016835016835
+    },
+    "arc_challenge": {
+      "acc": 0.5580204778156996,
+      "acc_norm": 0.5631399317406144
+    },
+    "winogrande": {
+      "acc": 0.6764009471191792,
+      "acc_norm": null
+    },
+    "hellaswag": {
+      "acc": 0.5711013742282414,
+      "acc_norm": 0.7491535550687114
+    },
+    "thunderllm-snu-ko-arc-challenge": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    },
+    "thunderllm-snu-ko-arc-easy": {
+      "acc": 0.0,
+      "acc_norm": 0.0
+    }
+  }
+}
