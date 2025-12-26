@@ -7,7 +7,7 @@ from datetime import datetime
 NOW = datetime.now()
 TIMESTAMP = NOW.strftime("%m%d_%H%M")
 
-ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'kmmlu_pos', 'kmmlu_pos_r','kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag', 'thunderllm-snu-ko-arc-challenge', 'thunderllm-snu-ko-arc-easy']
+ZEROSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'ko_nubench_api','kmmlu_pos', 'kmmlu_pos_r','kmmlu_neg', 'kobest_boolq', 'kobest_boolq_neg', 'arc_easy', 'arc_challenge', 'winogrande', 'hellaswag', 'thunderllm-snu-ko-arc-challenge', 'thunderllm-snu-ko-arc-easy']
 def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
     results = {}
     if setting == "baseline":
@@ -40,8 +40,12 @@ def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
 
                     tasks = data['results'].keys()
                     for task in tasks:
-                        acc = data['results'][task].get('acc,none')
-                        acc_norm = data['results'][task].get('acc_norm,none')
+                        if task == "ko_nubench_api":
+                            acc = data['results'][task].get("exact_match,get_response")
+                            acc_norm = 0  
+                        else:
+                            acc = data['results'][task].get('acc,none')
+                            acc_norm = data['results'][task].get('acc_norm,none')
 
                         results[model][task]['acc'] = acc
                         results[model][task]['acc_norm'] = acc_norm
@@ -59,7 +63,7 @@ def parse_0shot_results(root_dir: str, env: str, setting: str, method: str):
     
     return results
 
-FEWSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze']
+FEWSHOT_TASKS = ['ko_nubench_symbol', 'ko_nubench_cloze', 'ko_nubench_api']
 SEED = [1234, 308, 1028]
 def parse_fewshot_results(root_dir: str, fewshot: int):
     results = {}
@@ -90,11 +94,17 @@ def parse_fewshot_results(root_dir: str, fewshot: int):
                     seed = data['config']['random_seed']
                     tasks = data['results'].keys()
                     for task in tasks:
-                        acc = data['results'][task].get('acc,none')
-                        acc_norm = data['results'][task].get('acc_norm,none')
+                        if task == "ko_nubench_api":
+                            acc = data['results'][task].get("exact_match,get_response")
+                            acc_norm = 0 
+                        else:
+                            acc = data['results'][task].get('acc,none')
+                            acc_norm = data['results'][task].get('acc_norm,none')
 
-                        results[model][task][f'{fewshot}shot'][seed]['acc'] = acc
-                        results[model][task][f'{fewshot}shot'][seed]['acc_norm'] = acc_norm
+                        if acc is not None:
+                            results[model][task][f'{fewshot}shot'][seed]['acc'] = acc
+                        if acc_norm is not None:
+                            results[model][task][f'{fewshot}shot'][seed]['acc_norm'] = acc_norm
                 except Exception as e:
                     print(f"failed to read file: {file_path} → {e}")         
     
