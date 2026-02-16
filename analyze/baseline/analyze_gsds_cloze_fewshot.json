@@ -1,0 +1,412 @@
+{
+  "Qwen__Qwen3-0.6B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 588,
+        "local_negation": 655,
+        "contradiction": 30,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 591,
+        "local_negation": 652,
+        "contradiction": 31,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 576,
+        "local_negation": 667,
+        "contradiction": 29,
+        "paraphrase": 12
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 608,
+        "local_negation": 633,
+        "contradiction": 31,
+        "paraphrase": 12
+      },
+      "308": {
+        "standard_negation": 597,
+        "local_negation": 645,
+        "contradiction": 33,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 609,
+        "local_negation": 636,
+        "contradiction": 33,
+        "paraphrase": 6
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 667,
+        "local_negation": 580,
+        "contradiction": 25,
+        "paraphrase": 12
+      },
+      "308": {
+        "standard_negation": 672,
+        "local_negation": 575,
+        "contradiction": 24,
+        "paraphrase": 13
+      },
+      "1028": {
+        "standard_negation": 670,
+        "local_negation": 580,
+        "contradiction": 25,
+        "paraphrase": 9
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 735,
+        "local_negation": 513,
+        "contradiction": 25,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 740,
+        "local_negation": 510,
+        "contradiction": 25,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 740,
+        "local_negation": 507,
+        "contradiction": 26,
+        "paraphrase": 11
+      }
+    }
+  },
+  "gpt-4.1-mini": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    }
+  },
+  "Qwen__Qwen3-32B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 938,
+        "local_negation": 327,
+        "contradiction": 14,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 943,
+        "local_negation": 319,
+        "contradiction": 14,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 916,
+        "local_negation": 348,
+        "contradiction": 13,
+        "paraphrase": 7
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1040,
+        "local_negation": 227,
+        "contradiction": 14,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1039,
+        "local_negation": 233,
+        "contradiction": 8,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1032,
+        "local_negation": 237,
+        "contradiction": 10,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1116,
+        "local_negation": 158,
+        "contradiction": 8,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1123,
+        "local_negation": 148,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1106,
+        "local_negation": 165,
+        "contradiction": 11,
+        "paraphrase": 2
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1133,
+        "local_negation": 142,
+        "contradiction": 7,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1128,
+        "local_negation": 146,
+        "contradiction": 7,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1147,
+        "local_negation": 126,
+        "contradiction": 7,
+        "paraphrase": 4
+      }
+    }
+  },
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 875,
+        "local_negation": 371,
+        "contradiction": 30,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 900,
+        "local_negation": 348,
+        "contradiction": 26,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 860,
+        "local_negation": 387,
+        "contradiction": 26,
+        "paraphrase": 11
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 972,
+        "local_negation": 282,
+        "contradiction": 24,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 965,
+        "local_negation": 288,
+        "contradiction": 24,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 977,
+        "local_negation": 277,
+        "contradiction": 23,
+        "paraphrase": 7
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1096,
+        "local_negation": 167,
+        "contradiction": 15,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1100,
+        "local_negation": 166,
+        "contradiction": 13,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1085,
+        "local_negation": 181,
+        "contradiction": 12,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1118,
+        "local_negation": 141,
+        "contradiction": 17,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 1127,
+        "local_negation": 138,
+        "contradiction": 13,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1121,
+        "local_negation": 146,
+        "contradiction": 13,
+        "paraphrase": 4
+      }
+    }
+  },
+  "gpt-4.1": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    }
+  }
+}

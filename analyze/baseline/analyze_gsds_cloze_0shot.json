@@ -1,0 +1,32 @@
+{
+  "gpt-4.1": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-0.6B": {
+    "standard_negation": 474,
+    "local_negation": 769,
+    "contradiction": 29,
+    "paraphrase": 12
+  },
+  "Qwen__Qwen3-32B": {
+    "standard_negation": 696,
+    "local_negation": 556,
+    "contradiction": 23,
+    "paraphrase": 9
+  },
+  "kakaocorp__kanana-1.5-8b-instruct-2505": {
+    "standard_negation": 687,
+    "local_negation": 565,
+    "contradiction": 25,
+    "paraphrase": 7
+  },
+  "gpt-4.1-mini": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  }
+}
