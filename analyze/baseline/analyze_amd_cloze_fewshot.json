@@ -1,0 +1,3528 @@
+{
+  "meta-llama__Llama-3.1-8B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 690,
+        "local_negation": 561,
+        "contradiction": 20,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 665,
+        "local_negation": 585,
+        "contradiction": 20,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 670,
+        "local_negation": 579,
+        "contradiction": 22,
+        "paraphrase": 13
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 779,
+        "local_negation": 486,
+        "contradiction": 10,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 769,
+        "local_negation": 486,
+        "contradiction": 19,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 782,
+        "local_negation": 482,
+        "contradiction": 13,
+        "paraphrase": 7
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 933,
+        "local_negation": 332,
+        "contradiction": 12,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 923,
+        "local_negation": 338,
+        "contradiction": 15,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 924,
+        "local_negation": 343,
+        "contradiction": 9,
+        "paraphrase": 8
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1010,
+        "local_negation": 255,
+        "contradiction": 11,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 1006,
+        "local_negation": 264,
+        "contradiction": 8,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1021,
+        "local_negation": 247,
+        "contradiction": 9,
+        "paraphrase": 7
+      }
+    }
+  },
+  "meta-llama__Llama-3.2-3B-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 586,
+        "local_negation": 641,
+        "contradiction": 41,
+        "paraphrase": 16
+      },
+      "308": {
+        "standard_negation": 573,
+        "local_negation": 649,
+        "contradiction": 45,
+        "paraphrase": 17
+      },
+      "1028": {
+        "standard_negation": 565,
+        "local_negation": 651,
+        "contradiction": 50,
+        "paraphrase": 18
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 623,
+        "local_negation": 607,
+        "contradiction": 36,
+        "paraphrase": 18
+      },
+      "308": {
+        "standard_negation": 618,
+        "local_negation": 604,
+        "contradiction": 46,
+        "paraphrase": 16
+      },
+      "1028": {
+        "standard_negation": 626,
+        "local_negation": 599,
+        "contradiction": 42,
+        "paraphrase": 17
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 812,
+        "local_negation": 423,
+        "contradiction": 37,
+        "paraphrase": 12
+      },
+      "308": {
+        "standard_negation": 793,
+        "local_negation": 443,
+        "contradiction": 36,
+        "paraphrase": 12
+      },
+      "1028": {
+        "standard_negation": 812,
+        "local_negation": 432,
+        "contradiction": 29,
+        "paraphrase": 11
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 892,
+        "local_negation": 352,
+        "contradiction": 27,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 931,
+        "local_negation": 317,
+        "contradiction": 27,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 915,
+        "local_negation": 328,
+        "contradiction": 28,
+        "paraphrase": 13
+      }
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-1.5B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 679,
+        "local_negation": 550,
+        "contradiction": 41,
+        "paraphrase": 14
+      },
+      "308": {
+        "standard_negation": 656,
+        "local_negation": 575,
+        "contradiction": 39,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 649,
+        "local_negation": 578,
+        "contradiction": 40,
+        "paraphrase": 17
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 747,
+        "local_negation": 492,
+        "contradiction": 34,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 736,
+        "local_negation": 501,
+        "contradiction": 36,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 738,
+        "local_negation": 496,
+        "contradiction": 34,
+        "paraphrase": 16
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 850,
+        "local_negation": 399,
+        "contradiction": 28,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 850,
+        "local_negation": 396,
+        "contradiction": 27,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 847,
+        "local_negation": 397,
+        "contradiction": 29,
+        "paraphrase": 11
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 917,
+        "local_negation": 330,
+        "contradiction": 27,
+        "paraphrase": 10
+      },
+      "308": {
+        "standard_negation": 928,
+        "local_negation": 322,
+        "contradiction": 23,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 918,
+        "local_negation": 327,
+        "contradiction": 26,
+        "paraphrase": 13
+      }
+    }
+  },
+  "meta-llama__Llama-3.2-1B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 588,
+        "local_negation": 662,
+        "contradiction": 23,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 593,
+        "local_negation": 660,
+        "contradiction": 22,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 585,
+        "local_negation": 668,
+        "contradiction": 21,
+        "paraphrase": 10
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 627,
+        "local_negation": 624,
+        "contradiction": 22,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 646,
+        "local_negation": 605,
+        "contradiction": 24,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 649,
+        "local_negation": 608,
+        "contradiction": 18,
+        "paraphrase": 9
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 743,
+        "local_negation": 513,
+        "contradiction": 20,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 748,
+        "local_negation": 509,
+        "contradiction": 19,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 756,
+        "local_negation": 507,
+        "contradiction": 15,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 843,
+        "local_negation": 414,
+        "contradiction": 18,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 858,
+        "local_negation": 404,
+        "contradiction": 15,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 850,
+        "local_negation": 404,
+        "contradiction": 23,
+        "paraphrase": 7
+      }
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    }
+  },
+  "skt__A.X-4.0": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 1065,
+        "local_negation": 201,
+        "contradiction": 14,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1070,
+        "local_negation": 196,
+        "contradiction": 13,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1067,
+        "local_negation": 198,
+        "contradiction": 12,
+        "paraphrase": 7
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1107,
+        "local_negation": 156,
+        "contradiction": 14,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1106,
+        "local_negation": 164,
+        "contradiction": 8,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1106,
+        "local_negation": 161,
+        "contradiction": 12,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1145,
+        "local_negation": 130,
+        "contradiction": 6,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1153,
+        "local_negation": 120,
+        "contradiction": 7,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1151,
+        "local_negation": 125,
+        "contradiction": 5,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1143,
+        "local_negation": 129,
+        "contradiction": 10,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1144,
+        "local_negation": 134,
+        "contradiction": 3,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1151,
+        "local_negation": 123,
+        "contradiction": 5,
+        "paraphrase": 5
+      }
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-7.8B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 810,
+        "local_negation": 437,
+        "contradiction": 29,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 811,
+        "local_negation": 434,
+        "contradiction": 28,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 795,
+        "local_negation": 459,
+        "contradiction": 21,
+        "paraphrase": 9
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 860,
+        "local_negation": 388,
+        "contradiction": 29,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 855,
+        "local_negation": 397,
+        "contradiction": 23,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 880,
+        "local_negation": 370,
+        "contradiction": 25,
+        "paraphrase": 9
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 963,
+        "local_negation": 296,
+        "contradiction": 18,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 946,
+        "local_negation": 312,
+        "contradiction": 19,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 968,
+        "local_negation": 293,
+        "contradiction": 15,
+        "paraphrase": 8
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1003,
+        "local_negation": 262,
+        "contradiction": 15,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 996,
+        "local_negation": 265,
+        "contradiction": 17,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1032,
+        "local_negation": 234,
+        "contradiction": 13,
+        "paraphrase": 5
+      }
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "308": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 0,
+        "local_negation": 0,
+        "contradiction": 0,
+        "paraphrase": 0
+      }
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Think-14B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 894,
+        "local_negation": 374,
+        "contradiction": 13,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 871,
+        "local_negation": 393,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 860,
+        "local_negation": 409,
+        "contradiction": 11,
+        "paraphrase": 4
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 959,
+        "local_negation": 309,
+        "contradiction": 10,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 963,
+        "local_negation": 303,
+        "contradiction": 14,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 969,
+        "local_negation": 298,
+        "contradiction": 14,
+        "paraphrase": 3
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 2088,
+        "local_negation": 454,
+        "contradiction": 20,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 2090,
+        "local_negation": 458,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 2104,
+        "local_negation": 442,
+        "contradiction": 18,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1080,
+        "local_negation": 192,
+        "contradiction": 8,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1086,
+        "local_negation": 187,
+        "contradiction": 8,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1115,
+        "local_negation": 158,
+        "contradiction": 8,
+        "paraphrase": 3
+      }
+    }
+  },
+  "meta-llama__Llama-3.2-1B-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 579,
+        "local_negation": 649,
+        "contradiction": 41,
+        "paraphrase": 15
+      },
+      "308": {
+        "standard_negation": 573,
+        "local_negation": 655,
+        "contradiction": 42,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 547,
+        "local_negation": 679,
+        "contradiction": 43,
+        "paraphrase": 15
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 625,
+        "local_negation": 605,
+        "contradiction": 39,
+        "paraphrase": 15
+      },
+      "308": {
+        "standard_negation": 637,
+        "local_negation": 597,
+        "contradiction": 39,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 630,
+        "local_negation": 605,
+        "contradiction": 37,
+        "paraphrase": 12
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 750,
+        "local_negation": 492,
+        "contradiction": 32,
+        "paraphrase": 10
+      },
+      "308": {
+        "standard_negation": 755,
+        "local_negation": 486,
+        "contradiction": 34,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 747,
+        "local_negation": 494,
+        "contradiction": 35,
+        "paraphrase": 8
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 820,
+        "local_negation": 423,
+        "contradiction": 32,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 837,
+        "local_negation": 407,
+        "contradiction": 31,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 828,
+        "local_negation": 415,
+        "contradiction": 32,
+        "paraphrase": 9
+      }
+    }
+  },
+  "mistralai__Mistral-Nemo-Instruct-2407": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 920,
+        "local_negation": 335,
+        "contradiction": 20,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 907,
+        "local_negation": 347,
+        "contradiction": 22,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 898,
+        "local_negation": 357,
+        "contradiction": 19,
+        "paraphrase": 10
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1002,
+        "local_negation": 253,
+        "contradiction": 19,
+        "paraphrase": 10
+      },
+      "308": {
+        "standard_negation": 997,
+        "local_negation": 262,
+        "contradiction": 17,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1004,
+        "local_negation": 257,
+        "contradiction": 15,
+        "paraphrase": 8
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1099,
+        "local_negation": 163,
+        "contradiction": 14,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 1091,
+        "local_negation": 175,
+        "contradiction": 11,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 1090,
+        "local_negation": 177,
+        "contradiction": 12,
+        "paraphrase": 5
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1142,
+        "local_negation": 129,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1150,
+        "local_negation": 118,
+        "contradiction": 11,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1143,
+        "local_negation": 125,
+        "contradiction": 11,
+        "paraphrase": 5
+      }
+    }
+  },
+  "Qwen__Qwen3-4B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 806,
+        "local_negation": 450,
+        "contradiction": 19,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 782,
+        "local_negation": 473,
+        "contradiction": 18,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 776,
+        "local_negation": 480,
+        "contradiction": 21,
+        "paraphrase": 7
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 853,
+        "local_negation": 403,
+        "contradiction": 20,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 863,
+        "local_negation": 394,
+        "contradiction": 19,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 854,
+        "local_negation": 404,
+        "contradiction": 21,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 971,
+        "local_negation": 291,
+        "contradiction": 16,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 991,
+        "local_negation": 273,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 966,
+        "local_negation": 298,
+        "contradiction": 16,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1040,
+        "local_negation": 223,
+        "contradiction": 15,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1033,
+        "local_negation": 232,
+        "contradiction": 13,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1032,
+        "local_negation": 235,
+        "contradiction": 13,
+        "paraphrase": 4
+      }
+    }
+  },
+  "LGAI-EXAONE__EXAONE-4.0-1.2B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 500,
+        "local_negation": 679,
+        "contradiction": 79,
+        "paraphrase": 26
+      },
+      "308": {
+        "standard_negation": 493,
+        "local_negation": 690,
+        "contradiction": 73,
+        "paraphrase": 28
+      },
+      "1028": {
+        "standard_negation": 495,
+        "local_negation": 695,
+        "contradiction": 65,
+        "paraphrase": 29
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 567,
+        "local_negation": 625,
+        "contradiction": 68,
+        "paraphrase": 24
+      },
+      "308": {
+        "standard_negation": 565,
+        "local_negation": 636,
+        "contradiction": 62,
+        "paraphrase": 21
+      },
+      "1028": {
+        "standard_negation": 553,
+        "local_negation": 635,
+        "contradiction": 71,
+        "paraphrase": 25
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 710,
+        "local_negation": 513,
+        "contradiction": 40,
+        "paraphrase": 21
+      },
+      "308": {
+        "standard_negation": 685,
+        "local_negation": 521,
+        "contradiction": 55,
+        "paraphrase": 23
+      },
+      "1028": {
+        "standard_negation": 726,
+        "local_negation": 495,
+        "contradiction": 46,
+        "paraphrase": 17
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 797,
+        "local_negation": 439,
+        "contradiction": 35,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 791,
+        "local_negation": 438,
+        "contradiction": 41,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 787,
+        "local_negation": 443,
+        "contradiction": 36,
+        "paraphrase": 18
+      }
+    }
+  },
+  "upstage__SOLAR-10.7B-Instruct-v1.0": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 980,
+        "local_negation": 285,
+        "contradiction": 14,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 976,
+        "local_negation": 288,
+        "contradiction": 12,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 965,
+        "local_negation": 304,
+        "contradiction": 10,
+        "paraphrase": 5
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1017,
+        "local_negation": 256,
+        "contradiction": 7,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1008,
+        "local_negation": 261,
+        "contradiction": 7,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1030,
+        "local_negation": 243,
+        "contradiction": 6,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1070,
+        "local_negation": 207,
+        "contradiction": 4,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1065,
+        "local_negation": 207,
+        "contradiction": 7,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1079,
+        "local_negation": 198,
+        "contradiction": 3,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1097,
+        "local_negation": 181,
+        "contradiction": 4,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1091,
+        "local_negation": 183,
+        "contradiction": 6,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1102,
+        "local_negation": 174,
+        "contradiction": 6,
+        "paraphrase": 2
+      }
+    }
+  },
+  "K-intelligence__Midm-2.0-Mini-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 868,
+        "local_negation": 354,
+        "contradiction": 49,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 859,
+        "local_negation": 375,
+        "contradiction": 39,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 853,
+        "local_negation": 369,
+        "contradiction": 46,
+        "paraphrase": 16
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 973,
+        "local_negation": 262,
+        "contradiction": 38,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 954,
+        "local_negation": 286,
+        "contradiction": 35,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 954,
+        "local_negation": 284,
+        "contradiction": 38,
+        "paraphrase": 8
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1051,
+        "local_negation": 196,
+        "contradiction": 26,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 1056,
+        "local_negation": 194,
+        "contradiction": 24,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 1055,
+        "local_negation": 197,
+        "contradiction": 24,
+        "paraphrase": 8
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1108,
+        "local_negation": 146,
+        "contradiction": 21,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 1092,
+        "local_negation": 162,
+        "contradiction": 22,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1094,
+        "local_negation": 157,
+        "contradiction": 23,
+        "paraphrase": 10
+      }
+    }
+  },
+  "meta-llama__Llama-3.1-8B-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 656,
+        "local_negation": 583,
+        "contradiction": 32,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 639,
+        "local_negation": 599,
+        "contradiction": 32,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 645,
+        "local_negation": 595,
+        "contradiction": 31,
+        "paraphrase": 13
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 757,
+        "local_negation": 498,
+        "contradiction": 20,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 750,
+        "local_negation": 496,
+        "contradiction": 28,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 771,
+        "local_negation": 481,
+        "contradiction": 23,
+        "paraphrase": 9
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 914,
+        "local_negation": 352,
+        "contradiction": 13,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 907,
+        "local_negation": 354,
+        "contradiction": 17,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 917,
+        "local_negation": 347,
+        "contradiction": 14,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1005,
+        "local_negation": 259,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1002,
+        "local_negation": 263,
+        "contradiction": 12,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 999,
+        "local_negation": 267,
+        "contradiction": 12,
+        "paraphrase": 6
+      }
+    }
+  },
+  "meta-llama__Llama-3.1-70B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 879,
+        "local_negation": 392,
+        "contradiction": 12,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 867,
+        "local_negation": 401,
+        "contradiction": 13,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 879,
+        "local_negation": 390,
+        "contradiction": 11,
+        "paraphrase": 4
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 948,
+        "local_negation": 325,
+        "contradiction": 10,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 942,
+        "local_negation": 327,
+        "contradiction": 10,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 943,
+        "local_negation": 328,
+        "contradiction": 11,
+        "paraphrase": 2
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1055,
+        "local_negation": 220,
+        "contradiction": 8,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 1039,
+        "local_negation": 237,
+        "contradiction": 7,
+        "paraphrase": 1
+      },
+      "1028": {
+        "standard_negation": 1039,
+        "local_negation": 235,
+        "contradiction": 8,
+        "paraphrase": 2
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1108,
+        "local_negation": 168,
+        "contradiction": 6,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1107,
+        "local_negation": 171,
+        "contradiction": 5,
+        "paraphrase": 1
+      },
+      "1028": {
+        "standard_negation": 1110,
+        "local_negation": 168,
+        "contradiction": 4,
+        "paraphrase": 2
+      }
+    }
+  },
+  "kakaocorp__kanana-1.5-8b-base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 760,
+        "local_negation": 500,
+        "contradiction": 17,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 739,
+        "local_negation": 523,
+        "contradiction": 15,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 736,
+        "local_negation": 523,
+        "contradiction": 16,
+        "paraphrase": 9
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 869,
+        "local_negation": 392,
+        "contradiction": 16,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 851,
+        "local_negation": 414,
+        "contradiction": 11,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 874,
+        "local_negation": 393,
+        "contradiction": 11,
+        "paraphrase": 6
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 986,
+        "local_negation": 286,
+        "contradiction": 7,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 974,
+        "local_negation": 297,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 986,
+        "local_negation": 286,
+        "contradiction": 9,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1035,
+        "local_negation": 237,
+        "contradiction": 8,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1016,
+        "local_negation": 258,
+        "contradiction": 8,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1035,
+        "local_negation": 241,
+        "contradiction": 7,
+        "paraphrase": 1
+      }
+    }
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 968,
+        "local_negation": 296,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 960,
+        "local_negation": 301,
+        "contradiction": 15,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 943,
+        "local_negation": 320,
+        "contradiction": 15,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1022,
+        "local_negation": 241,
+        "contradiction": 14,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 993,
+        "local_negation": 269,
+        "contradiction": 14,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1007,
+        "local_negation": 257,
+        "contradiction": 12,
+        "paraphrase": 8
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1070,
+        "local_negation": 195,
+        "contradiction": 15,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1064,
+        "local_negation": 205,
+        "contradiction": 11,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1081,
+        "local_negation": 185,
+        "contradiction": 11,
+        "paraphrase": 7
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1082,
+        "local_negation": 187,
+        "contradiction": 10,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 1096,
+        "local_negation": 173,
+        "contradiction": 10,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1099,
+        "local_negation": 168,
+        "contradiction": 12,
+        "paraphrase": 5
+      }
+    }
+  },
+  "meta-llama__Llama-3.1-70B-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 866,
+        "local_negation": 397,
+        "contradiction": 17,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 877,
+        "local_negation": 384,
+        "contradiction": 18,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 867,
+        "local_negation": 397,
+        "contradiction": 14,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 955,
+        "local_negation": 308,
+        "contradiction": 18,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 971,
+        "local_negation": 296,
+        "contradiction": 11,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 942,
+        "local_negation": 324,
+        "contradiction": 15,
+        "paraphrase": 3
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1078,
+        "local_negation": 196,
+        "contradiction": 9,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 1079,
+        "local_negation": 193,
+        "contradiction": 10,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1082,
+        "local_negation": 188,
+        "contradiction": 9,
+        "paraphrase": 5
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1138,
+        "local_negation": 139,
+        "contradiction": 4,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1137,
+        "local_negation": 137,
+        "contradiction": 8,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1132,
+        "local_negation": 144,
+        "contradiction": 6,
+        "paraphrase": 2
+      }
+    }
+  },
+  "mistralai__Mistral-7B-v0.3": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 829,
+        "local_negation": 435,
+        "contradiction": 12,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 800,
+        "local_negation": 464,
+        "contradiction": 13,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 781,
+        "local_negation": 477,
+        "contradiction": 20,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 903,
+        "local_negation": 363,
+        "contradiction": 13,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 902,
+        "local_negation": 363,
+        "contradiction": 14,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 895,
+        "local_negation": 373,
+        "contradiction": 10,
+        "paraphrase": 6
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 995,
+        "local_negation": 276,
+        "contradiction": 11,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 995,
+        "local_negation": 275,
+        "contradiction": 10,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 997,
+        "local_negation": 271,
+        "contradiction": 11,
+        "paraphrase": 5
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1047,
+        "local_negation": 226,
+        "contradiction": 7,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1038,
+        "local_negation": 233,
+        "contradiction": 10,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1046,
+        "local_negation": 226,
+        "contradiction": 9,
+        "paraphrase": 3
+      }
+    }
+  },
+  "skt__ko-gpt-trinity-1.2B-v0.5": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 401,
+        "local_negation": 748,
+        "contradiction": 106,
+        "paraphrase": 29
+      },
+      "308": {
+        "standard_negation": 409,
+        "local_negation": 728,
+        "contradiction": 116,
+        "paraphrase": 31
+      },
+      "1028": {
+        "standard_negation": 408,
+        "local_negation": 729,
+        "contradiction": 114,
+        "paraphrase": 33
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 426,
+        "local_negation": 717,
+        "contradiction": 106,
+        "paraphrase": 35
+      },
+      "308": {
+        "standard_negation": 423,
+        "local_negation": 722,
+        "contradiction": 105,
+        "paraphrase": 34
+      },
+      "1028": {
+        "standard_negation": 419,
+        "local_negation": 727,
+        "contradiction": 104,
+        "paraphrase": 34
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 423,
+        "local_negation": 728,
+        "contradiction": 102,
+        "paraphrase": 31
+      },
+      "308": {
+        "standard_negation": 429,
+        "local_negation": 715,
+        "contradiction": 110,
+        "paraphrase": 30
+      },
+      "1028": {
+        "standard_negation": 428,
+        "local_negation": 718,
+        "contradiction": 106,
+        "paraphrase": 32
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 435,
+        "local_negation": 718,
+        "contradiction": 98,
+        "paraphrase": 33
+      },
+      "308": {
+        "standard_negation": 422,
+        "local_negation": 732,
+        "contradiction": 98,
+        "paraphrase": 32
+      },
+      "1028": {
+        "standard_negation": 420,
+        "local_negation": 729,
+        "contradiction": 99,
+        "paraphrase": 36
+      }
+    }
+  },
+  "Qwen__Qwen3-14B-Base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 958,
+        "local_negation": 302,
+        "contradiction": 16,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 961,
+        "local_negation": 300,
+        "contradiction": 16,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 969,
+        "local_negation": 291,
+        "contradiction": 18,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1011,
+        "local_negation": 255,
+        "contradiction": 12,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 993,
+        "local_negation": 272,
+        "contradiction": 12,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 1029,
+        "local_negation": 240,
+        "contradiction": 9,
+        "paraphrase": 6
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1083,
+        "local_negation": 186,
+        "contradiction": 10,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 1085,
+        "local_negation": 182,
+        "contradiction": 12,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1096,
+        "local_negation": 178,
+        "contradiction": 6,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1131,
+        "local_negation": 144,
+        "contradiction": 4,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 1128,
+        "local_negation": 146,
+        "contradiction": 6,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1135,
+        "local_negation": 139,
+        "contradiction": 5,
+        "paraphrase": 5
+      }
+    }
+  },
+  "mistralai__Mistral-Small-24B-Base-2501": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 947,
+        "local_negation": 318,
+        "contradiction": 15,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 915,
+        "local_negation": 346,
+        "contradiction": 17,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 920,
+        "local_negation": 339,
+        "contradiction": 18,
+        "paraphrase": 7
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1039,
+        "local_negation": 227,
+        "contradiction": 15,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1014,
+        "local_negation": 252,
+        "contradiction": 12,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1032,
+        "local_negation": 235,
+        "contradiction": 12,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1092,
+        "local_negation": 175,
+        "contradiction": 12,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 1099,
+        "local_negation": 171,
+        "contradiction": 12,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1108,
+        "local_negation": 167,
+        "contradiction": 8,
+        "paraphrase": 1
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1126,
+        "local_negation": 147,
+        "contradiction": 9,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1134,
+        "local_negation": 142,
+        "contradiction": 7,
+        "paraphrase": 1
+      },
+      "1028": {
+        "standard_negation": 1147,
+        "local_negation": 128,
+        "contradiction": 6,
+        "paraphrase": 3
+      }
+    }
+  },
+  "K-intelligence__Midm-2.0-Base-Instruct": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 951,
+        "local_negation": 306,
+        "contradiction": 21,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 936,
+        "local_negation": 324,
+        "contradiction": 18,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 937,
+        "local_negation": 325,
+        "contradiction": 16,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1027,
+        "local_negation": 235,
+        "contradiction": 15,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1028,
+        "local_negation": 240,
+        "contradiction": 12,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1024,
+        "local_negation": 239,
+        "contradiction": 16,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1101,
+        "local_negation": 168,
+        "contradiction": 12,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1081,
+        "local_negation": 185,
+        "contradiction": 14,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1104,
+        "local_negation": 169,
+        "contradiction": 9,
+        "paraphrase": 2
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1126,
+        "local_negation": 146,
+        "contradiction": 8,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1135,
+        "local_negation": 138,
+        "contradiction": 7,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1137,
+        "local_negation": 137,
+        "contradiction": 7,
+        "paraphrase": 3
+      }
+    }
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 981,
+        "local_negation": 291,
+        "contradiction": 9,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 952,
+        "local_negation": 320,
+        "contradiction": 7,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 941,
+        "local_negation": 327,
+        "contradiction": 11,
+        "paraphrase": 5
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1055,
+        "local_negation": 216,
+        "contradiction": 10,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1042,
+        "local_negation": 230,
+        "contradiction": 9,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1061,
+        "local_negation": 209,
+        "contradiction": 11,
+        "paraphrase": 3
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1139,
+        "local_negation": 136,
+        "contradiction": 7,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1124,
+        "local_negation": 150,
+        "contradiction": 7,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1145,
+        "local_negation": 131,
+        "contradiction": 6,
+        "paraphrase": 2
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1149,
+        "local_negation": 126,
+        "contradiction": 7,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1150,
+        "local_negation": 126,
+        "contradiction": 5,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1158,
+        "local_negation": 116,
+        "contradiction": 7,
+        "paraphrase": 3
+      }
+    }
+  },
+  "Qwen__Qwen3-1.7B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 762,
+        "local_negation": 491,
+        "contradiction": 23,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 755,
+        "local_negation": 494,
+        "contradiction": 26,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 758,
+        "local_negation": 498,
+        "contradiction": 20,
+        "paraphrase": 8
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 810,
+        "local_negation": 450,
+        "contradiction": 16,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 827,
+        "local_negation": 432,
+        "contradiction": 18,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 855,
+        "local_negation": 407,
+        "contradiction": 13,
+        "paraphrase": 9
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 958,
+        "local_negation": 313,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 969,
+        "local_negation": 296,
+        "contradiction": 12,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 971,
+        "local_negation": 296,
+        "contradiction": 14,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1037,
+        "local_negation": 232,
+        "contradiction": 13,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1023,
+        "local_negation": 242,
+        "contradiction": 13,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1035,
+        "local_negation": 236,
+        "contradiction": 12,
+        "paraphrase": 1
+      }
+    }
+  },
+  "meta-llama__Llama-3.2-3B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 747,
+        "local_negation": 506,
+        "contradiction": 20,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 705,
+        "local_negation": 539,
+        "contradiction": 28,
+        "paraphrase": 12
+      },
+      "1028": {
+        "standard_negation": 693,
+        "local_negation": 551,
+        "contradiction": 28,
+        "paraphrase": 12
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 790,
+        "local_negation": 464,
+        "contradiction": 20,
+        "paraphrase": 10
+      },
+      "308": {
+        "standard_negation": 773,
+        "local_negation": 476,
+        "contradiction": 25,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 793,
+        "local_negation": 459,
+        "contradiction": 22,
+        "paraphrase": 10
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 913,
+        "local_negation": 346,
+        "contradiction": 18,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 912,
+        "local_negation": 346,
+        "contradiction": 18,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 916,
+        "local_negation": 342,
+        "contradiction": 20,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 972,
+        "local_negation": 291,
+        "contradiction": 14,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 975,
+        "local_negation": 287,
+        "contradiction": 15,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 982,
+        "local_negation": 277,
+        "contradiction": 17,
+        "paraphrase": 8
+      }
+    }
+  },
+  "upstage__SOLAR-10.7B-v1.0": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 749,
+        "local_negation": 510,
+        "contradiction": 17,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 724,
+        "local_negation": 531,
+        "contradiction": 19,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 721,
+        "local_negation": 530,
+        "contradiction": 22,
+        "paraphrase": 11
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 824,
+        "local_negation": 440,
+        "contradiction": 15,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 809,
+        "local_negation": 455,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 838,
+        "local_negation": 426,
+        "contradiction": 17,
+        "paraphrase": 3
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 946,
+        "local_negation": 327,
+        "contradiction": 10,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 928,
+        "local_negation": 338,
+        "contradiction": 14,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 931,
+        "local_negation": 341,
+        "contradiction": 9,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1007,
+        "local_negation": 267,
+        "contradiction": 7,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1008,
+        "local_negation": 268,
+        "contradiction": 8,
+        "paraphrase": 0
+      },
+      "1028": {
+        "standard_negation": 1024,
+        "local_negation": 252,
+        "contradiction": 6,
+        "paraphrase": 2
+      }
+    }
+  },
+  "Qwen__Qwen3-0.6B-Base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 758,
+        "local_negation": 490,
+        "contradiction": 25,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 740,
+        "local_negation": 511,
+        "contradiction": 22,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 742,
+        "local_negation": 510,
+        "contradiction": 23,
+        "paraphrase": 9
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 805,
+        "local_negation": 447,
+        "contradiction": 22,
+        "paraphrase": 10
+      },
+      "308": {
+        "standard_negation": 808,
+        "local_negation": 439,
+        "contradiction": 26,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 816,
+        "local_negation": 437,
+        "contradiction": 22,
+        "paraphrase": 9
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 894,
+        "local_negation": 362,
+        "contradiction": 21,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 905,
+        "local_negation": 346,
+        "contradiction": 24,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 909,
+        "local_negation": 352,
+        "contradiction": 16,
+        "paraphrase": 7
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 965,
+        "local_negation": 293,
+        "contradiction": 19,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 963,
+        "local_negation": 297,
+        "contradiction": 17,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 961,
+        "local_negation": 297,
+        "contradiction": 17,
+        "paraphrase": 9
+      }
+    }
+  },
+  "LGAI-EXAONE__EXAONE-4.0-32B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 829,
+        "local_negation": 428,
+        "contradiction": 21,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 813,
+        "local_negation": 451,
+        "contradiction": 17,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 820,
+        "local_negation": 438,
+        "contradiction": 21,
+        "paraphrase": 5
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 894,
+        "local_negation": 364,
+        "contradiction": 21,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 911,
+        "local_negation": 353,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 889,
+        "local_negation": 374,
+        "contradiction": 15,
+        "paraphrase": 6
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1013,
+        "local_negation": 258,
+        "contradiction": 11,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1016,
+        "local_negation": 250,
+        "contradiction": 11,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 1008,
+        "local_negation": 258,
+        "contradiction": 14,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1045,
+        "local_negation": 224,
+        "contradiction": 9,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1055,
+        "local_negation": 218,
+        "contradiction": 8,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1050,
+        "local_negation": 224,
+        "contradiction": 7,
+        "paraphrase": 3
+      }
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-2.4B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 668,
+        "local_negation": 552,
+        "contradiction": 43,
+        "paraphrase": 21
+      },
+      "308": {
+        "standard_negation": 655,
+        "local_negation": 562,
+        "contradiction": 46,
+        "paraphrase": 21
+      },
+      "1028": {
+        "standard_negation": 645,
+        "local_negation": 570,
+        "contradiction": 50,
+        "paraphrase": 19
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 736,
+        "local_negation": 478,
+        "contradiction": 51,
+        "paraphrase": 19
+      },
+      "308": {
+        "standard_negation": 748,
+        "local_negation": 484,
+        "contradiction": 38,
+        "paraphrase": 14
+      },
+      "1028": {
+        "standard_negation": 755,
+        "local_negation": 473,
+        "contradiction": 43,
+        "paraphrase": 13
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 886,
+        "local_negation": 358,
+        "contradiction": 29,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 866,
+        "local_negation": 378,
+        "contradiction": 31,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 867,
+        "local_negation": 375,
+        "contradiction": 32,
+        "paraphrase": 10
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 966,
+        "local_negation": 275,
+        "contradiction": 31,
+        "paraphrase": 12
+      },
+      "308": {
+        "standard_negation": 971,
+        "local_negation": 268,
+        "contradiction": 34,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 964,
+        "local_negation": 277,
+        "contradiction": 33,
+        "paraphrase": 10
+      }
+    }
+  },
+  "LGAI-EXAONE__EXAONE-Deep-32B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 875,
+        "local_negation": 384,
+        "contradiction": 17,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 876,
+        "local_negation": 378,
+        "contradiction": 23,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 870,
+        "local_negation": 381,
+        "contradiction": 23,
+        "paraphrase": 10
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 913,
+        "local_negation": 343,
+        "contradiction": 20,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 912,
+        "local_negation": 343,
+        "contradiction": 17,
+        "paraphrase": 12
+      },
+      "1028": {
+        "standard_negation": 895,
+        "local_negation": 361,
+        "contradiction": 18,
+        "paraphrase": 10
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 981,
+        "local_negation": 272,
+        "contradiction": 24,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 991,
+        "local_negation": 264,
+        "contradiction": 20,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 989,
+        "local_negation": 267,
+        "contradiction": 22,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1044,
+        "local_negation": 217,
+        "contradiction": 16,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1041,
+        "local_negation": 216,
+        "contradiction": 20,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 1047,
+        "local_negation": 216,
+        "contradiction": 16,
+        "paraphrase": 5
+      }
+    }
+  },
+  "mistralai__Mistral-Nemo-Base-2407": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 882,
+        "local_negation": 374,
+        "contradiction": 19,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 870,
+        "local_negation": 391,
+        "contradiction": 16,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 849,
+        "local_negation": 408,
+        "contradiction": 19,
+        "paraphrase": 8
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 991,
+        "local_negation": 269,
+        "contradiction": 15,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 991,
+        "local_negation": 273,
+        "contradiction": 13,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 989,
+        "local_negation": 272,
+        "contradiction": 16,
+        "paraphrase": 7
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1095,
+        "local_negation": 172,
+        "contradiction": 13,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1084,
+        "local_negation": 183,
+        "contradiction": 11,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1101,
+        "local_negation": 172,
+        "contradiction": 8,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1143,
+        "local_negation": 129,
+        "contradiction": 8,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1148,
+        "local_negation": 127,
+        "contradiction": 6,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1146,
+        "local_negation": 126,
+        "contradiction": 9,
+        "paraphrase": 3
+      }
+    }
+  },
+  "Qwen__Qwen3-14B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 835,
+        "local_negation": 417,
+        "contradiction": 23,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 822,
+        "local_negation": 437,
+        "contradiction": 17,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 813,
+        "local_negation": 443,
+        "contradiction": 20,
+        "paraphrase": 8
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 929,
+        "local_negation": 330,
+        "contradiction": 19,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 907,
+        "local_negation": 349,
+        "contradiction": 18,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 918,
+        "local_negation": 341,
+        "contradiction": 17,
+        "paraphrase": 8
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1047,
+        "local_negation": 216,
+        "contradiction": 15,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1036,
+        "local_negation": 227,
+        "contradiction": 15,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1031,
+        "local_negation": 233,
+        "contradiction": 14,
+        "paraphrase": 6
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1100,
+        "local_negation": 165,
+        "contradiction": 11,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 1087,
+        "local_negation": 176,
+        "contradiction": 13,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1092,
+        "local_negation": 168,
+        "contradiction": 16,
+        "paraphrase": 8
+      }
+    }
+  },
+  "Qwen__Qwen3-1.7B-Base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 907,
+        "local_negation": 355,
+        "contradiction": 14,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 895,
+        "local_negation": 365,
+        "contradiction": 19,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 895,
+        "local_negation": 368,
+        "contradiction": 16,
+        "paraphrase": 5
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 973,
+        "local_negation": 290,
+        "contradiction": 15,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 973,
+        "local_negation": 289,
+        "contradiction": 16,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 986,
+        "local_negation": 280,
+        "contradiction": 14,
+        "paraphrase": 4
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1083,
+        "local_negation": 189,
+        "contradiction": 10,
+        "paraphrase": 2
+      },
+      "308": {
+        "standard_negation": 1074,
+        "local_negation": 193,
+        "contradiction": 14,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1089,
+        "local_negation": 184,
+        "contradiction": 10,
+        "paraphrase": 1
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1116,
+        "local_negation": 158,
+        "contradiction": 9,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 1118,
+        "local_negation": 155,
+        "contradiction": 9,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1117,
+        "local_negation": 155,
+        "contradiction": 10,
+        "paraphrase": 2
+      }
+    }
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-0.5B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 567,
+        "local_negation": 666,
+        "contradiction": 40,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 581,
+        "local_negation": 657,
+        "contradiction": 35,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 566,
+        "local_negation": 668,
+        "contradiction": 40,
+        "paraphrase": 10
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 629,
+        "local_negation": 613,
+        "contradiction": 31,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 640,
+        "local_negation": 598,
+        "contradiction": 36,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 656,
+        "local_negation": 586,
+        "contradiction": 31,
+        "paraphrase": 11
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 759,
+        "local_negation": 491,
+        "contradiction": 25,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 730,
+        "local_negation": 517,
+        "contradiction": 26,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 744,
+        "local_negation": 507,
+        "contradiction": 24,
+        "paraphrase": 9
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 665,
+        "local_negation": 580,
+        "contradiction": 30,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 679,
+        "local_negation": 578,
+        "contradiction": 19,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 662,
+        "local_negation": 585,
+        "contradiction": 28,
+        "paraphrase": 9
+      }
+    }
+  },
+  "Qwen__Qwen3-4B-Base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 963,
+        "local_negation": 301,
+        "contradiction": 13,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 942,
+        "local_negation": 319,
+        "contradiction": 17,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 935,
+        "local_negation": 327,
+        "contradiction": 14,
+        "paraphrase": 8
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1001,
+        "local_negation": 260,
+        "contradiction": 18,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 1005,
+        "local_negation": 261,
+        "contradiction": 12,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1007,
+        "local_negation": 260,
+        "contradiction": 12,
+        "paraphrase": 5
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1093,
+        "local_negation": 178,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1086,
+        "local_negation": 183,
+        "contradiction": 10,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1103,
+        "local_negation": 169,
+        "contradiction": 9,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1121,
+        "local_negation": 150,
+        "contradiction": 10,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1128,
+        "local_negation": 145,
+        "contradiction": 8,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1132,
+        "local_negation": 140,
+        "contradiction": 10,
+        "paraphrase": 2
+      }
+    }
+  },
+  "skt__A.X-4.0-Light": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 919,
+        "local_negation": 316,
+        "contradiction": 36,
+        "paraphrase": 13
+      },
+      "308": {
+        "standard_negation": 896,
+        "local_negation": 337,
+        "contradiction": 40,
+        "paraphrase": 11
+      },
+      "1028": {
+        "standard_negation": 892,
+        "local_negation": 341,
+        "contradiction": 36,
+        "paraphrase": 15
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 972,
+        "local_negation": 266,
+        "contradiction": 35,
+        "paraphrase": 11
+      },
+      "308": {
+        "standard_negation": 976,
+        "local_negation": 265,
+        "contradiction": 31,
+        "paraphrase": 12
+      },
+      "1028": {
+        "standard_negation": 975,
+        "local_negation": 256,
+        "contradiction": 39,
+        "paraphrase": 14
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1072,
+        "local_negation": 178,
+        "contradiction": 27,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1079,
+        "local_negation": 176,
+        "contradiction": 20,
+        "paraphrase": 9
+      },
+      "1028": {
+        "standard_negation": 1072,
+        "local_negation": 187,
+        "contradiction": 18,
+        "paraphrase": 7
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1099,
+        "local_negation": 158,
+        "contradiction": 19,
+        "paraphrase": 8
+      },
+      "308": {
+        "standard_negation": 1109,
+        "local_negation": 144,
+        "contradiction": 23,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 1093,
+        "local_negation": 159,
+        "contradiction": 22,
+        "paraphrase": 10
+      }
+    }
+  },
+  "Qwen__Qwen3-8B-Base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 923,
+        "local_negation": 344,
+        "contradiction": 12,
+        "paraphrase": 5
+      },
+      "308": {
+        "standard_negation": 889,
+        "local_negation": 378,
+        "contradiction": 12,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 897,
+        "local_negation": 372,
+        "contradiction": 9,
+        "paraphrase": 6
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1008,
+        "local_negation": 263,
+        "contradiction": 7,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 983,
+        "local_negation": 291,
+        "contradiction": 8,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 997,
+        "local_negation": 273,
+        "contradiction": 10,
+        "paraphrase": 4
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1094,
+        "local_negation": 183,
+        "contradiction": 4,
+        "paraphrase": 3
+      },
+      "308": {
+        "standard_negation": 1093,
+        "local_negation": 183,
+        "contradiction": 6,
+        "paraphrase": 2
+      },
+      "1028": {
+        "standard_negation": 1107,
+        "local_negation": 171,
+        "contradiction": 3,
+        "paraphrase": 3
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1130,
+        "local_negation": 147,
+        "contradiction": 6,
+        "paraphrase": 1
+      },
+      "308": {
+        "standard_negation": 1148,
+        "local_negation": 126,
+        "contradiction": 7,
+        "paraphrase": 3
+      },
+      "1028": {
+        "standard_negation": 1135,
+        "local_negation": 141,
+        "contradiction": 6,
+        "paraphrase": 2
+      }
+    }
+  },
+  "kakaocorp__kanana-1.5-2.1b-instruct-2505": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 998,
+        "local_negation": 255,
+        "contradiction": 22,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 977,
+        "local_negation": 274,
+        "contradiction": 25,
+        "paraphrase": 8
+      },
+      "1028": {
+        "standard_negation": 983,
+        "local_negation": 270,
+        "contradiction": 23,
+        "paraphrase": 8
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 1051,
+        "local_negation": 205,
+        "contradiction": 21,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1022,
+        "local_negation": 236,
+        "contradiction": 21,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1036,
+        "local_negation": 217,
+        "contradiction": 24,
+        "paraphrase": 7
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1108,
+        "local_negation": 153,
+        "contradiction": 16,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1104,
+        "local_negation": 154,
+        "contradiction": 21,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1108,
+        "local_negation": 155,
+        "contradiction": 14,
+        "paraphrase": 7
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1149,
+        "local_negation": 115,
+        "contradiction": 16,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1142,
+        "local_negation": 123,
+        "contradiction": 13,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1147,
+        "local_negation": 116,
+        "contradiction": 16,
+        "paraphrase": 5
+      }
+    }
+  },
+  "kakaocorp__kanana-1.5-2.1b-base": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 820,
+        "local_negation": 435,
+        "contradiction": 20,
+        "paraphrase": 9
+      },
+      "308": {
+        "standard_negation": 789,
+        "local_negation": 464,
+        "contradiction": 21,
+        "paraphrase": 10
+      },
+      "1028": {
+        "standard_negation": 788,
+        "local_negation": 465,
+        "contradiction": 19,
+        "paraphrase": 12
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 899,
+        "local_negation": 357,
+        "contradiction": 21,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 880,
+        "local_negation": 376,
+        "contradiction": 21,
+        "paraphrase": 7
+      },
+      "1028": {
+        "standard_negation": 900,
+        "local_negation": 362,
+        "contradiction": 14,
+        "paraphrase": 8
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 995,
+        "local_negation": 268,
+        "contradiction": 14,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 1013,
+        "local_negation": 249,
+        "contradiction": 16,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 1014,
+        "local_negation": 251,
+        "contradiction": 15,
+        "paraphrase": 4
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1063,
+        "local_negation": 207,
+        "contradiction": 8,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 1067,
+        "local_negation": 204,
+        "contradiction": 9,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1060,
+        "local_negation": 208,
+        "contradiction": 13,
+        "paraphrase": 3
+      }
+    }
+  },
+  "Qwen__Qwen3-8B": {
+    "1shot": {
+      "1234": {
+        "standard_negation": 800,
+        "local_negation": 461,
+        "contradiction": 17,
+        "paraphrase": 6
+      },
+      "308": {
+        "standard_negation": 783,
+        "local_negation": 481,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 782,
+        "local_negation": 484,
+        "contradiction": 13,
+        "paraphrase": 5
+      }
+    },
+    "2shot": {
+      "1234": {
+        "standard_negation": 872,
+        "local_negation": 387,
+        "contradiction": 18,
+        "paraphrase": 7
+      },
+      "308": {
+        "standard_negation": 870,
+        "local_negation": 394,
+        "contradiction": 14,
+        "paraphrase": 6
+      },
+      "1028": {
+        "standard_negation": 889,
+        "local_negation": 374,
+        "contradiction": 17,
+        "paraphrase": 4
+      }
+    },
+    "5shot": {
+      "1234": {
+        "standard_negation": 1019,
+        "local_negation": 247,
+        "contradiction": 14,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1021,
+        "local_negation": 247,
+        "contradiction": 11,
+        "paraphrase": 5
+      },
+      "1028": {
+        "standard_negation": 1019,
+        "local_negation": 253,
+        "contradiction": 10,
+        "paraphrase": 2
+      }
+    },
+    "10shot": {
+      "1234": {
+        "standard_negation": 1081,
+        "local_negation": 186,
+        "contradiction": 13,
+        "paraphrase": 4
+      },
+      "308": {
+        "standard_negation": 1063,
+        "local_negation": 207,
+        "contradiction": 10,
+        "paraphrase": 4
+      },
+      "1028": {
+        "standard_negation": 1086,
+        "local_negation": 183,
+        "contradiction": 10,
+        "paraphrase": 5
+      }
+    }
+  }
+}
