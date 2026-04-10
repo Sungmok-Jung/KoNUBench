@@ -39,11 +39,47 @@ SEED = [1234, 308, 1028]
 SHOT = [0, 1, 2, 5, 10]
 FEWSHOT_LABELS = [f"{x}shot" for x in SHOT] 
 METHOD = ["cloze", "symbol"]
+METHOD = ["api"]
 CATEGORIES = ['standard_negation', 'local_negation', 'contradiction', 'paraphrase']
 
 def remove_prefix_suffix(filename: str):
     name = filename.removeprefix("results_").removesuffix(".json")
     return name
+
+def _read_samples_api(sample_data):
+    temp = {}
+
+    if sample_data["doc"]["standard_negation"]:
+        idx = sample_data["doc"]["query"].find(sample_data["doc"]["standard_negation"])
+        if idx != -1:
+            temp[idx] = "standard_negation"
+
+    if sample_data["doc"]["local_negation"]:
+        idx = sample_data["doc"]["query"].find(sample_data["doc"]["local_negation"])
+        if idx != -1:
+            temp[idx] = "local_negation"
+
+    if sample_data["doc"]["contradiction"]:
+        idx = sample_data["doc"]["query"].find(sample_data["doc"]["contradiction"])
+        if idx != -1:
+            temp[idx] = "contradiction"
+
+    if sample_data["doc"]["paraphrase"]:
+        idx = sample_data["doc"]["query"].find(sample_data["doc"]["paraphrase"])
+        if idx != -1:
+            temp[idx] = "paraphrase"
+
+    # Sort by appearance order in the query (A, B, C, D)
+    sorted_items = sorted(temp.items(), key=lambda x: x[0])
+    resps = sample_data["filtered_resps"][0]
+
+    choices = ["A", "B", "C", "D"]
+    choice_map = {}
+
+    for i, (_, label) in enumerate(sorted_items):
+        choice_map[choices[i]] = label
+
+    return choice_map.get(resps, None)
 
 def _read_samples_symbol(sample_data):
     temp = {}
@@ -142,11 +178,17 @@ def analyze(root_dir: str, method: str, fewshot: int):
                                         chosen = _read_samples_symbol(sample_data)
                                     elif method == "cloze":
                                         chosen = _read_samples_cloze(sample_data)
+                                    elif method == "api":
+                                        chosen = _read_samples_api(sample_data)
                                     
                                     # Increase count for the predicted choice type
                                     if fewshot == 0:
+                                        if chosen == None:
+                                            pass
                                         result[model_name][chosen] += 1
                                     else:
+                                        if chosen == None:
+                                            pass
                                         result[model_name][seed][chosen] += 1
 
                         except Exception as e_s:
