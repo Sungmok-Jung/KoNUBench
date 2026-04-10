@@ -1,0 +1,266 @@
+{
+  "meta-llama__Llama-3.1-8B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.2-3B-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-1.5B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.2-1B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "claude-sonnet-4-5-20250929": {
+    "standard_negation": 1259,
+    "local_negation": 18,
+    "contradiction": 7,
+    "paraphrase": 0
+  },
+  "skt__A.X-4.0": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "LGAI-EXAONE__EXAONE-Deep-7.8B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "claude-haiku-4-5-20251001": {
+    "standard_negation": 1191,
+    "local_negation": 79,
+    "contradiction": 11,
+    "paraphrase": 3
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Think-14B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.2-1B-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "mistralai__Mistral-Nemo-Instruct-2407": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-4B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "LGAI-EXAONE__EXAONE-4.0-1.2B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "upstage__SOLAR-10.7B-Instruct-v1.0": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "K-intelligence__Midm-2.0-Mini-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.1-8B-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.1-70B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "kakaocorp__kanana-1.5-8b-base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "mistralai__Mistral-7B-Instruct-v0.3": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.1-70B-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "mistralai__Mistral-7B-v0.3": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "skt__ko-gpt-trinity-1.2B-v0.5": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-14B-Base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "mistralai__Mistral-Small-24B-Base-2501": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "K-intelligence__Midm-2.0-Base-Instruct": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "gpt-4.1-mini": {
+    "standard_negation": 1066,
+    "local_negation": 198,
+    "contradiction": 16,
+    "paraphrase": 4
+  },
+  "mistralai__Mistral-Small-24B-Instruct-2501": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-1.7B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "meta-llama__Llama-3.2-3B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "upstage__SOLAR-10.7B-v1.0": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-0.6B-Base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "LGAI-EXAONE__EXAONE-4.0-32B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "LGAI-EXAONE__EXAONE-Deep-2.4B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "LGAI-EXAONE__EXAONE-Deep-32B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "mistralai__Mistral-Nemo-Base-2407": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-14B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-1.7B-Base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "naver-hyperclovax__HyperCLOVAX-SEED-Text-Instruct-0.5B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-4B-Base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "skt__A.X-4.0-Light": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-8B-Base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "kakaocorp__kanana-1.5-2.1b-instruct-2505": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "kakaocorp__kanana-1.5-2.1b-base": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  },
+  "Qwen__Qwen3-8B": {
+    "standard_negation": 0,
+    "local_negation": 0,
+    "contradiction": 0,
+    "paraphrase": 0
+  }
+}
