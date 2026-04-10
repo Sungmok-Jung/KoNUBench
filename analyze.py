@@ -36,9 +36,10 @@ import pandas as pd
 # }
 
 SEED = [1234, 308, 1028]
-SHOT = [0, 1, 2, 5, 10]
+# SHOT = [0, 1, 2, 5, 10]
+SHOT = [0]
 FEWSHOT_LABELS = [f"{x}shot" for x in SHOT] 
-METHOD = ["cloze", "symbol"]
+# METHOD = ["cloze", "symbol"]
 METHOD = ["api"]
 CATEGORIES = ['standard_negation', 'local_negation', 'contradiction', 'paraphrase']
 
